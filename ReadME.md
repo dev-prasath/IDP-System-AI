@@ -496,5 +496,3 @@ Possible deployment platforms:
 - AWS EC2
 - Docker Deployment
 
-
-
