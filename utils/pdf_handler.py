@@ -1,39 +1,76 @@
-from pdf2image import convert_from_bytes
-from pdf2image.exceptions import (
-    PDFPageCountError,
-    PDFSyntaxError
-)
+# =========================================================
+# utils/pdf_handler.py
+# STREAMLIT CLOUD READY VERSION
+# =========================================================
 
-POPPLER_PATH = r"E:\Poppler\poppler-26.02.0\Library\bin"
+import io
+import fitz
 
+from PIL import Image
+
+# =========================================================
+# PDF TO IMAGES
+# =========================================================
 
 def pdf_to_images(pdf_file):
 
+    """
+    Convert PDF pages into PIL images
+    using PyMuPDF.
+
+    Streamlit Cloud compatible.
+    """
+
     try:
 
-        images = convert_from_bytes(
-            pdf_file.read(),
-            dpi=300,
-            poppler_path=POPPLER_PATH,
-            thread_count=1
+        images = []
+
+        pdf_file.seek(0)
+
+        pdf_bytes = pdf_file.read()
+
+        pdf_document = fitz.open(
+
+            stream=pdf_bytes,
+
+            filetype="pdf"
         )
+
+        for page_number in range(
+
+            len(pdf_document)
+        ):
+
+            page = pdf_document.load_page(
+
+                page_number
+            )
+
+            pix = page.get_pixmap(
+
+                dpi=300
+            )
+
+            image_bytes = pix.tobytes(
+
+                "png"
+            )
+
+            pil_image = Image.open(
+
+                io.BytesIO(image_bytes)
+            ).convert("RGB")
+
+            images.append(
+
+                pil_image
+            )
 
         return images
-
-    except PDFPageCountError:
-
-        raise Exception(
-            "Invalid or corrupted PDF file."
-        )
-
-    except PDFSyntaxError:
-
-        raise Exception(
-            "PDF syntax error."
-        )
 
     except Exception as e:
 
         raise Exception(
+
             f"PDF Processing Error: {str(e)}"
         )

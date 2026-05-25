@@ -10,7 +10,6 @@ from io import BytesIO
 import cv2
 import numpy as np
 import pandas as pd
-import requests
 import streamlit as st
 from PIL import Image
 
@@ -40,6 +39,7 @@ from utils.logger import (
     log_exception
 )
 
+from backend.services.document_service import process_document
 # =========================================================
 # PAGE CONFIG
 # =========================================================
@@ -55,7 +55,6 @@ st.set_page_config(
 # CONSTANTS
 # =========================================================
 
-API_URL = "http://127.0.0.1:8000/process-document"
 
 ALLOWED_TYPES = [
     "image/png",
@@ -389,21 +388,7 @@ if menu == "📤 Upload Documents":
 
                 uploaded_file.seek(0)
 
-                files = {
-                    "file": (
-                        uploaded_file.name,
-                        uploaded_file,
-                        uploaded_file.type
-                    )
-                }
-
-                response = requests.post(
-                    API_URL,
-                    files=files,
-                    timeout=300
-                )
-
-                result = response.json()
+                result = process_document(uploaded_file)
 
                 if not result.get("success", False):
 

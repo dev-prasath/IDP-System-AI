@@ -1,6 +1,17 @@
 # =========================================================
 # backend/services/document_service.py
-# FULL UPDATED STABLE VERSION
+# STREAMLIT CLOUD DEPLOYMENT READY VERSION
+# =========================================================
+
+# =========================================================
+# IMPORTS
+# =========================================================
+
+import numpy as np
+from PIL import Image
+
+# =========================================================
+# PREPROCESSING
 # =========================================================
 
 from preprocessing.image_processing import (
@@ -22,10 +33,6 @@ from backend.services.nlp_service import (
 from backend.services.classification_service import (
     classify_document
 )
-
-# from backend.services.table_service import (
-#     process_tables
-# )
 
 # =========================================================
 # STRUCTURED OUTPUT
@@ -54,21 +61,54 @@ from utils.logger import (
 )
 
 # =========================================================
+# CONVERT STREAMLIT FILE TO IMAGE
+# =========================================================
+
+def convert_uploaded_file_to_image(uploaded_file):
+
+    """
+    Converts Streamlit UploadedFile
+    into OpenCV/Numpy compatible image.
+    """
+
+    try:
+
+        uploaded_file.seek(0)
+
+        pil_image = Image.open(
+            uploaded_file
+        ).convert("RGB")
+
+        image = np.array(
+            pil_image
+        )
+
+        return image
+
+    except Exception as e:
+
+        log_exception(
+            f"Image Conversion Error: {str(e)}"
+        )
+
+        return None
+
+# =========================================================
 # PROCESS DOCUMENT
 # =========================================================
-print("STEP 1 - PREPROCESSING START")
-def process_document(document_image):
+
+def process_document(uploaded_file):
 
     """
     Complete Intelligent Document
     Processing Pipeline.
 
     Steps:
-    1. Preprocessing
-    2. OCR Extraction
-    3. Document Classification
-    4. NLP Entity Extraction
-    5. Table Extraction
+    1. File Conversion
+    2. Image Preprocessing
+    3. OCR Extraction
+    4. Document Classification
+    5. NLP Entity Extraction
     6. Structured Output Generation
     7. Final Response Construction
     """
@@ -78,6 +118,48 @@ def process_document(document_image):
         log_info(
             "Starting document processing pipeline"
         )
+
+        # =================================================
+        # FILE CONVERSION
+        # =================================================
+
+        try:
+
+            document_image = (
+                convert_uploaded_file_to_image(
+                    uploaded_file
+                )
+            )
+
+            if document_image is None:
+
+                raise ValueError(
+                    "Failed to load image"
+                )
+
+            log_info(
+                "File conversion completed"
+            )
+
+        except Exception as conversion_error:
+
+            log_exception(
+                f"File Conversion Error: "
+                f"{str(conversion_error)}"
+            )
+
+            return {
+
+                "success": False,
+
+                "message": (
+                    "Document conversion failed"
+                ),
+
+                "error": str(
+                    conversion_error
+                )
+            }
 
         # =================================================
         # IMAGE PREPROCESSING
@@ -102,7 +184,6 @@ def process_document(document_image):
         except Exception as preprocessing_error:
 
             log_exception(
-
                 f"Preprocessing Error: "
                 f"{str(preprocessing_error)}"
             )
@@ -129,9 +210,6 @@ def process_document(document_image):
             ocr_results = process_ocr(
                 processed_image
             )
-
-            print("\nOCR RESULTS:")
-            print(ocr_results)
 
             if not ocr_results.get(
                 "success",
@@ -209,11 +287,13 @@ def process_document(document_image):
 
         try:
 
-            # document_type = classify_document(
-            #     extracted_text
-            # )
+            document_type = classify_document(
+                extracted_text
+            )
 
-            document_type = "Document"
+            if not document_type:
+
+                document_type = "Document"
 
             log_info(
                 f"Document classified as: "
@@ -223,12 +303,11 @@ def process_document(document_image):
         except Exception as classification_error:
 
             log_error(
-
                 f"Classification Error: "
                 f"{str(classification_error)}"
             )
 
-            document_type = "Unknown"
+            document_type = "Document"
 
         # =================================================
         # NLP ENTITY EXTRACTION
@@ -239,9 +318,6 @@ def process_document(document_image):
             nlp_results = process_entities(
                 extracted_text
             )
-
-            print("\nNLP RESULTS:")
-            print(nlp_results)
 
             if not nlp_results.get(
                 "success",
@@ -295,26 +371,6 @@ def process_document(document_image):
 
         table_data = []
 
-        # try:
-
-        #     table_results = process_tables(
-        #         processed_image
-        #     )
-
-        #     table_data = table_results.get(
-        #         "table_data",
-        #         []
-        #     )
-
-        # except Exception as table_error:
-
-        #     log_error(
-        #         f"Table Extraction Failed: "
-        #         f"{str(table_error)}"
-        #     )
-
-        #     table_data = []
-
         # =================================================
         # STRUCTURED OUTPUT
         # =================================================
@@ -335,7 +391,6 @@ def process_document(document_image):
         except Exception as structure_error:
 
             log_error(
-
                 f"Structure Output Error: "
                 f"{str(structure_error)}"
             )
@@ -371,7 +426,6 @@ def process_document(document_image):
         except Exception as response_error:
 
             log_exception(
-
                 f"Response Builder Error: "
                 f"{str(response_error)}"
             )

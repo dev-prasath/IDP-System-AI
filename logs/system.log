@@ -1,0 +1,1489 @@
+2026-05-22 23:52:02,166 | INFO | logger.py | log_info | Line:73 | FastAPI Intelligent Document Processing Server Started Successfully
+2026-05-22 23:53:00,111 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown Successfully
+2026-05-23 00:00:11,248 | INFO | logger.py | log_info | Line:73 | FastAPI Intelligent Document Processing Server Started Successfully
+2026-05-23 00:00:15,096 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown Successfully
+2026-05-23 00:00:26,065 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 00:00:57,174 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 00:00:58,373 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 00:01:10,670 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 00:02:04,730 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 00:02:11,531 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:40:33,302 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:42:28,187 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:42:35,254 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:42:53,354 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:43:02,359 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:43:16,853 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:43:16,855 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:43:20,723 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:43:20,725 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:43:24,258 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:44:48,973 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:45:09,559 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:45:24,255 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:45:24,302 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:45:38,173 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:46:14,974 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:48:16,249 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:48:20,565 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:49:30,507 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:49:30,521 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:49:34,136 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:50:45,205 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:50:45,211 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:50:48,932 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:51:08,261 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:51:20,847 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:51:29,044 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:53:21,874 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:53:21,879 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:53:30,113 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 22:58:51,692 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 22:58:51,699 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 22:58:59,953 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:00:45,943 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:01:13,945 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:01:32,482 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:01:36,922 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:05:50,584 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:06:44,458 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:06:48,857 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:07:15,407 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:07:19,878 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:07:19,880 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:07:50,902 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:10:40,996 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:11:09,533 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:11:09,540 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:11:34,239 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:21:13,225 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:21:36,024 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:21:50,018 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:22:03,727 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:22:25,667 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:22:36,869 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:22:43,180 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:23:20,768 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:23:27,268 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:23:27,280 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:23:41,825 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:24:00,713 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:24:14,926 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:24:14,930 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:24:41,537 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:30:50,918 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:31:06,056 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:33:09,435 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:33:09,442 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:34:07,141 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:34:07,156 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:34:35,885 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:35:10,640 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:35:10,646 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:35:10,651 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:36:00,070 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:36:00,080 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:38:38,136 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:38:46,916 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:38:46,925 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:38:50,698 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:43:15,179 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:43:34,029 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:43:41,085 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:44:19,561 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:44:41,513 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-23 23:48:00,078 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-23 23:48:04,529 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-23 23:48:58,250 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 00:03:29,630 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:03:43,850 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:03:57,575 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:04:29,057 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:07:05,390 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:07:21,325 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:09:24,531 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:09:49,780 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:10:17,341 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:10:31,023 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:10:45,003 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:11:23,536 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:11:52,899 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:12:09,116 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:12:22,384 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:12:51,846 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:13:55,864 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:14:19,705 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:16:44,804 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:19:55,153 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 00:19:55,178 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 00:19:55,298 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 00:20:46,792 | ERROR | logger.py | log_error | Line:83 | OCR Service Error: too many values to unpack (expected 3)
+2026-05-24 00:20:46,863 | ERROR | logger.py | log_exception | Line:88 | Unhandled Exception: 9 validation errors:
+  {'type': 'missing', 'loc': ('response', 'file_name'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'document_type'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'pages'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'ocr_confidence'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'ocr_text'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'entities'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'structured_output'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'boxes'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'table_data'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\backend\routes\process_routes.py", line 44, in process_uploaded_document
+    POST /process-document
+Traceback (most recent call last):
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\middleware\base.py", line 196, in __call__
+    recv_stream.close()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\backend\main.py", line 251, in log_requests
+    response = await call_next(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\fastapi\routing.py", line 121, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\fastapi\routing.py", line 107, in app
+    response = await f(request)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\fastapi\routing.py", line 448, in app
+    content = await serialize_response(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\fastapi\routing.py", line 286, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 9 validation errors:
+  {'type': 'missing', 'loc': ('response', 'file_name'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'document_type'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'pages'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'ocr_confidence'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'ocr_text'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'entities'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'structured_output'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'boxes'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+  {'type': 'missing', 'loc': ('response', 'table_data'), 'msg': 'Field required', 'input': {'success': False, 'message': 'OCR extraction failed'}}
+
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\backend\routes\process_routes.py", line 44, in process_uploaded_document
+    POST /process-document
+2026-05-24 00:23:14,156 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:23:24,953 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 00:23:41,116 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 00:23:41,145 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 00:23:41,279 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 00:24:15,650 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 00:24:15,657 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 00:24:15,657 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-24 00:24:15,658 | INFO | logger.py | log_info | Line:73 | Document classified as: Resume
+2026-05-24 00:24:15,659 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-24 00:24:16,896 | INFO | logger.py | log_info | Line:73 | NLP extraction completed
+2026-05-24 00:24:16,896 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 00:24:16,897 | INFO | logger.py | log_info | Line:73 | Starting table extraction
+2026-05-24 00:24:16,897 | ERROR | logger.py | log_error | Line:83 | Table Extraction Error: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+2026-05-24 00:24:16,898 | INFO | logger.py | log_info | Line:73 | Extracted 0 tables
+2026-05-24 00:24:16,898 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 00:24:16,930 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 10:29:10,358 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 10:30:21,672 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 10:30:21,872 | INFO | logger.py | log_info | Line:73 | GET http://127.0.0.1:8000/docs?utm_source=chatgpt.com
+2026-05-24 10:30:21,874 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 10:30:21,997 | INFO | logger.py | log_info | Line:73 | GET http://127.0.0.1:8000/openapi.json
+2026-05-24 10:30:22,006 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 10:31:03,447 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 10:31:03,495 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 11:54:01,981 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 11:54:01,987 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 11:54:02,032 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 11:54:02,242 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 11:54:48,988 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 11:54:48,993 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 11:54:48,994 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 11:54:48,994 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 11:54:48,994 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 11:54:49,017 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:34:29,076 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 12:36:24,224 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:36:24,253 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:36:24,425 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:37:04,706 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:37:04,711 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:37:04,711 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:37:04,712 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 12:37:04,712 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 12:37:04,733 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:41:35,576 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 12:41:46,267 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:41:46,307 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:41:46,546 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:42:27,657 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:42:27,672 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:42:27,672 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:42:27,673 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 12:42:27,675 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 12:42:27,733 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:45:22,006 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 12:45:22,015 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:45:22,049 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:45:22,290 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:45:22,290 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:46:05,076 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:46:05,083 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:46:05,083 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:46:05,083 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 12:46:05,084 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 12:46:05,115 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:46:05,139 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:46:05,877 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:46:06,711 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:46:06,711 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:46:35,071 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:46:35,072 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:46:35,072 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:46:35,072 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 12:46:35,072 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 12:46:35,075 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:47:05,659 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:47:06,043 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:47:06,980 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:47:06,980 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:47:34,610 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:47:34,611 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:47:34,611 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:47:34,611 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 12:47:34,611 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 12:47:34,628 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:48:10,295 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:48:10,687 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:48:11,621 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:48:11,621 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:48:39,072 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:48:39,072 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:48:39,072 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:48:39,072 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 12:48:39,081 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 12:48:39,083 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:48:39,095 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:48:39,101 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:48:39,145 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:48:39,145 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:48:46,491 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:48:46,491 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:48:46,491 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:48:46,491 | INFO | logger.py | log_info | Line:73 | Starting NLP extraction
+2026-05-24 12:48:46,491 | ERROR | logger.py | log_error | Line:83 | NLP Service Error: name 'extract_entities' is not defined
+2026-05-24 12:48:46,493 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:50:37,861 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 12:50:37,871 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:50:37,897 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:50:37,933 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:50:37,933 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:50:45,265 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:50:45,265 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:50:45,266 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:50:45,266 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 12:50:52,726 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 12:50:52,728 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 12:50:52,728 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 12:50:52,728 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 12:50:52,730 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:51:02,910 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:51:02,914 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:51:02,936 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:51:02,936 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:51:06,901 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:51:06,901 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:51:06,902 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:51:06,902 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 12:51:07,002 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 12:51:07,002 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 12:51:07,003 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 12:51:07,003 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 12:51:07,004 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:57:06,812 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:57:06,817 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:57:06,838 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:57:06,839 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:57:10,730 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:57:10,730 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:57:10,730 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:57:10,731 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 12:57:10,849 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 12:57:10,849 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 12:57:10,849 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 12:57:10,850 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 12:57:10,851 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 12:57:10,854 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 12:57:10,867 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 12:57:10,918 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 12:57:10,918 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 12:57:21,163 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:57:21,164 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 12:57:21,164 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 12:57:21,164 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 12:57:21,269 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 12:57:21,269 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 12:57:21,269 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 12:57:21,269 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 12:57:21,272 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:17:52,330 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 13:40:43,121 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 13:41:11,041 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:41:11,076 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:41:11,154 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:41:11,154 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:41:24,726 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:41:24,727 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:41:24,727 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:41:24,727 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:41:26,243 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:41:26,245 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:41:26,245 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:41:26,245 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:41:26,248 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:42:54,736 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 13:42:54,738 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:42:54,784 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:42:54,861 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:42:54,862 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:43:07,013 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:43:07,018 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:43:07,018 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:43:07,018 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:43:08,550 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:43:08,551 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:43:08,551 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:43:08,552 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:43:08,554 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:44:12,631 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 13:44:12,640 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:44:12,640 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:44:12,643 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:44:12,643 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:44:12,679 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:44:12,742 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:44:12,742 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:44:25,515 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:25,515 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:25,515 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:44:25,515 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:44:26,853 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:26,854 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:26,855 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:44:26,855 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:44:26,869 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:44:26,924 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:44:26,924 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:44:36,592 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:36,592 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:36,592 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:44:36,592 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:44:36,682 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:36,690 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:36,690 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:44:36,690 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:44:36,704 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:44:36,750 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:44:36,750 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:44:46,338 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:46,338 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:46,338 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:44:46,339 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:44:46,432 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:46,432 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:46,433 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:44:46,433 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:44:46,446 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:44:46,498 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:44:46,498 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:44:55,931 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:55,931 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:44:55,931 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:44:55,931 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:44:56,026 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:56,027 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:44:56,027 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:44:56,027 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:44:56,029 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:44:56,030 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:44:56,030 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:44:56,031 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:45:21,371 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:45:21,389 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:45:21,454 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:45:21,454 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:45:31,274 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:45:31,274 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:45:31,275 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:45:31,276 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:45:31,408 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:45:31,409 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 13:45:31,409 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:45:31,409 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:45:31,411 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:45:41,249 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 13:47:54,961 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:47:54,994 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:47:55,046 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:47:55,047 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:48:04,454 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:48:04,454 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:48:04,454 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:48:04,454 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:48:06,040 | INFO | logger.py | log_info | Line:73 | Extracted 13 entities
+2026-05-24 13:48:06,041 | INFO | logger.py | log_info | Line:73 | Extracted 13 entities
+2026-05-24 13:48:06,042 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:48:06,042 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:48:06,043 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:48:38,156 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:48:38,187 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:48:38,455 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:48:38,455 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:49:08,693 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:49:08,694 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:49:08,694 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:49:08,695 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:49:09,299 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 13:49:09,300 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 13:49:09,300 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:49:09,300 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:49:09,306 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:54:57,337 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 13:54:57,356 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 13:54:57,588 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 13:54:57,589 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 13:55:26,953 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:55:26,954 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 13:55:26,954 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 13:55:26,954 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 13:55:27,526 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 13:55:27,526 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 13:55:27,526 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 13:55:27,527 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 13:55:27,531 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 13:55:45,721 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 14:00:21,471 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 14:00:21,478 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:00:21,510 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:00:21,703 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:00:21,703 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:01:04,191 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:01:04,200 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:01:04,200 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:01:04,201 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:01:06,973 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 14:01:06,974 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 14:01:06,976 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:01:06,976 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:01:06,992 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 14:01:39,889 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:01:39,918 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:01:40,003 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:01:40,004 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:01:47,701 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:01:47,701 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:01:47,702 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:01:47,702 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:01:47,807 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 14:01:47,807 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 14:01:47,807 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:01:47,808 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:01:47,810 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 14:02:02,558 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:02:02,572 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:02:02,621 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:02:02,622 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:02:10,572 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:02:10,572 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:02:10,573 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:02:10,573 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:02:10,685 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 14:02:10,685 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 14:02:10,685 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:02:10,686 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:02:10,690 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 14:02:10,692 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:02:10,707 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:02:10,739 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:02:10,740 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:02:16,561 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:02:16,561 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:02:16,562 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:02:16,562 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:02:16,689 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 14:02:16,689 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 14:02:16,689 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:02:16,689 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:02:16,692 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 14:05:28,843 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 14:05:28,856 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:05:28,889 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:05:28,965 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:05:28,966 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:05:38,899 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:05:38,900 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:05:38,900 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:05:38,901 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:05:40,067 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 14:05:40,067 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 14:05:40,067 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:05:40,069 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:05:40,070 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 14:06:47,710 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:06:47,728 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:06:47,768 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:06:47,768 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:06:53,828 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:06:53,828 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:06:53,828 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:06:53,828 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:06:53,916 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 14:06:53,917 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 14:06:53,917 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:06:53,917 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:06:53,919 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 14:06:53,920 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:06:54,904 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:06:55,513 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:06:55,513 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:07:19,288 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:07:19,289 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:07:19,289 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:07:19,289 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:07:19,868 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 14:07:19,869 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 14:07:19,869 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:07:19,869 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:07:19,879 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 14:07:54,717 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 14:07:55,262 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 14:07:56,157 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 14:07:56,158 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 14:08:20,004 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:08:20,004 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 14:08:20,004 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 14:08:20,005 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 14:08:20,543 | INFO | logger.py | log_info | Line:73 | Extracted 83 entities
+2026-05-24 14:08:20,543 | INFO | logger.py | log_info | Line:73 | Extracted 83 entities
+2026-05-24 14:08:20,544 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 14:08:20,544 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 14:08:20,546 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:30:37,090 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:30:39,427 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:30:40,322 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:30:41,104 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:30:41,105 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:31:17,031 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:31:17,034 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:31:17,035 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:31:17,035 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:31:19,634 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:31:19,634 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:31:19,635 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:31:19,635 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:31:19,662 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:33:52,036 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:33:54,775 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:33:55,399 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:33:56,274 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:33:56,274 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:34:31,199 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:34:31,204 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:34:31,204 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:34:31,205 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:34:33,780 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:34:33,780 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:34:33,781 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:34:33,781 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:34:33,857 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:34:50,964 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:36:41,460 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:36:41,466 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:36:42,393 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:36:43,082 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:36:43,083 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:37:14,609 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:37:14,617 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:37:14,617 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:37:14,617 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:37:17,110 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:37:17,114 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:37:17,115 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:37:17,115 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:37:17,133 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:39:43,740 | ERROR | logger.py | log_exception | Line:88 | Unable to get page count. Is poppler installed and in PATH?
+Traceback (most recent call last):
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 581, in pdfinfo_from_path
+    proc = Popen(command, env=env, stdout=PIPE, stderr=PIPE)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\app.py", line 312, in <module>
+    pdf_pages = convert_from_bytes(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 359, in convert_from_bytes
+    return convert_from_path(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 127, in convert_from_path
+    page_count = pdfinfo_from_path(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 607, in pdfinfo_from_path
+    raise PDFInfoNotInstalledError(
+pdf2image.exceptions.PDFInfoNotInstalledError: Unable to get page count. Is poppler installed and in PATH?
+2026-05-24 15:40:02,715 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:40:02,725 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:40:03,332 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:40:04,206 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:40:04,206 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:40:35,777 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:40:35,782 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:40:35,783 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:40:35,783 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:40:38,399 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:40:38,400 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:40:38,401 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:40:38,402 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:40:38,429 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:41:03,868 | ERROR | logger.py | log_exception | Line:88 | Unable to get page count. Is poppler installed and in PATH?
+Traceback (most recent call last):
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 581, in pdfinfo_from_path
+    proc = Popen(command, env=env, stdout=PIPE, stderr=PIPE)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\app.py", line 312, in <module>
+    pdf_pages = convert_from_bytes(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 359, in convert_from_bytes
+    return convert_from_path(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 127, in convert_from_path
+    page_count = pdfinfo_from_path(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\pdf2image\pdf2image.py", line 607, in pdfinfo_from_path
+    raise PDFInfoNotInstalledError(
+pdf2image.exceptions.PDFInfoNotInstalledError: Unable to get page count. Is poppler installed and in PATH?
+2026-05-24 15:41:03,969 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:41:04,685 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:41:05,541 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:41:05,541 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:41:32,615 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:41:32,615 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:41:32,616 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:41:32,616 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:41:33,160 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:41:33,161 | INFO | logger.py | log_info | Line:73 | Extracted 68 entities
+2026-05-24 15:41:33,161 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:41:33,161 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:41:33,182 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:41:33,184 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:41:33,191 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:41:33,209 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:41:33,209 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:41:36,729 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:41:36,743 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:41:36,743 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:41:36,743 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:41:36,849 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 15:41:36,849 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 15:41:36,849 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:41:36,850 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:41:36,851 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:42:10,041 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:42:10,046 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:42:10,068 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:42:10,068 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:42:14,230 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:42:14,231 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:42:14,232 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:42:14,232 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:42:14,351 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 15:42:14,353 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 15:42:14,353 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:42:14,353 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:42:14,355 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:42:14,356 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:42:14,374 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:42:14,416 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:42:14,416 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:42:21,700 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:42:21,700 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:42:21,700 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:42:21,700 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:42:21,800 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 15:42:21,800 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 15:42:21,801 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:42:21,801 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:42:21,803 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:46:08,860 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:46:32,311 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:46:45,125 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:46:45,477 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:46:46,291 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:46:46,292 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:47:26,831 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:47:26,835 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:47:26,836 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:47:26,836 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:47:29,168 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 15:47:29,173 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 15:47:29,174 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:47:29,174 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:47:29,186 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:48:28,363 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:48:28,705 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:48:29,551 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:48:29,551 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:49:01,686 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:49:01,688 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:49:01,688 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:49:01,688 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:49:02,264 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 15:49:02,264 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 15:49:02,265 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:49:02,265 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:49:02,281 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:52:37,729 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:52:48,007 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:52:48,014 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:52:48,267 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:52:48,951 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:52:48,951 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:53:32,197 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:53:32,206 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:53:32,207 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:53:32,207 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:53:35,433 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 15:53:35,433 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 15:53:35,436 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:53:35,436 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:53:35,512 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:53:35,533 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:53:35,563 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:53:35,617 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:53:35,617 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:53:39,928 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:53:39,928 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:53:39,929 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:53:39,929 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:53:40,067 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 15:53:40,068 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 15:53:40,068 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:53:40,069 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:53:40,072 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:54:24,803 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:54:24,823 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:54:24,874 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:54:24,876 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:54:32,416 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:54:32,416 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:54:32,416 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:54:32,416 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:54:32,532 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 15:54:32,532 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 15:54:32,532 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:54:32,533 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:54:32,535 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:55:12,251 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:55:12,259 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:55:12,291 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:55:12,291 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:55:20,699 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:55:20,699 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:55:20,701 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:55:20,701 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:55:21,178 | INFO | logger.py | log_info | Line:73 | Extracted 20 entities
+2026-05-24 15:55:21,178 | INFO | logger.py | log_info | Line:73 | Extracted 20 entities
+2026-05-24 15:55:21,178 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:55:21,178 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:55:21,181 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:55:49,029 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:55:49,041 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:55:49,083 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:55:49,083 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:55:57,801 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:55:57,802 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:55:57,802 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:55:57,802 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:55:58,266 | INFO | logger.py | log_info | Line:73 | Extracted 20 entities
+2026-05-24 15:55:58,268 | INFO | logger.py | log_info | Line:73 | Extracted 20 entities
+2026-05-24 15:55:58,268 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:55:58,268 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:55:58,269 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:55:58,402 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:55:58,407 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:55:58,475 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:55:58,475 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:56:11,913 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:56:11,914 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:56:11,914 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:56:11,914 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:56:12,105 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 15:56:12,105 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 15:56:12,105 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:56:12,106 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:56:12,107 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:56:12,110 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:56:12,114 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:56:12,181 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:56:12,181 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:56:25,455 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:56:25,456 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:56:25,456 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:56:25,456 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:56:25,706 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 15:56:25,707 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 15:56:25,707 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:56:25,708 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:56:25,711 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 15:58:41,673 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 15:58:41,679 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 15:58:41,696 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 15:58:41,816 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 15:58:41,816 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 15:58:59,047 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:58:59,048 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 15:58:59,048 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 15:58:59,048 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 15:59:01,036 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 15:59:01,036 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 15:59:01,036 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 15:59:01,037 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 15:59:01,039 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:02:51,689 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:02:56,771 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:02:58,558 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:02:58,574 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:02:58,625 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:02:58,625 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:03:13,487 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:03:13,489 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:03:13,489 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:03:13,490 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:03:14,921 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:03:14,921 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:03:14,921 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:03:14,922 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:03:14,926 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:03:14,991 | ERROR | logger.py | log_exception | Line:88 | image() got an unexpected keyword argument 'width=650'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\app.py", line 689, in <module>
+    st.image(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\streamlit\runtime\metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: image() got an unexpected keyword argument 'width=650'
+2026-05-24 16:04:08,613 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:04:36,505 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:04:44,277 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:04:49,127 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:05:26,214 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:05:40,496 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:05:55,622 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:06:05,132 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:06:05,150 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:06:05,185 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:06:05,185 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:06:10,576 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:06:10,577 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:06:10,577 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:06:10,577 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:06:11,343 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:06:11,359 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:06:11,359 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:06:11,359 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:06:11,361 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:06:28,671 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:06:28,674 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:06:28,687 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:06:28,687 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:06:32,121 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:06:32,121 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:06:32,121 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:06:32,121 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:06:32,219 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:06:32,219 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:06:32,219 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:06:32,219 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:06:32,221 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:06:32,222 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:06:32,233 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:06:32,252 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:06:32,252 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:06:37,595 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:06:37,596 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:06:37,596 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:06:37,597 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:06:37,679 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:06:37,679 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:06:37,679 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:06:37,679 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:06:37,681 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:06:58,033 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:06:58,048 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:06:58,088 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:06:58,088 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:07:03,464 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:07:03,464 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:07:03,465 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:07:03,465 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:07:03,548 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:07:03,548 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:07:03,549 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:07:03,549 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:07:03,550 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:07:03,551 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:07:03,556 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:07:03,608 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:07:03,608 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:07:16,559 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:07:16,560 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:07:16,560 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:07:16,560 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:07:16,738 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:07:16,738 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:07:16,738 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:07:16,739 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:07:16,742 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:13:03,341 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:13:03,352 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:13:03,352 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:13:10,580 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:13:10,587 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:13:16,798 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:14:00,317 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:14:04,333 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:14:05,002 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:14:05,002 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:14:40,599 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:14:40,603 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:14:40,604 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:14:40,605 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:14:42,758 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 16:14:42,758 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 16:14:42,759 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:14:42,759 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:14:42,760 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:14:43,602 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:14:43,602 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:15:07,811 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:15:07,811 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:15:07,811 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:15:07,812 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:15:08,115 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 16:15:08,116 | INFO | logger.py | log_info | Line:73 | Extracted 12 entities
+2026-05-24 16:15:08,116 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:15:08,116 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:15:08,125 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:15:08,878 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:15:08,879 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:15:30,918 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:15:30,923 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:15:30,923 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:15:30,923 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:15:31,217 | INFO | logger.py | log_info | Line:73 | Extracted 9 entities
+2026-05-24 16:15:31,218 | INFO | logger.py | log_info | Line:73 | Extracted 9 entities
+2026-05-24 16:15:31,218 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:15:31,218 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:15:31,219 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:15:31,917 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:15:31,917 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:15:54,892 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:15:54,894 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:15:54,895 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:15:54,895 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:15:55,271 | INFO | logger.py | log_info | Line:73 | Extracted 8 entities
+2026-05-24 16:15:55,271 | INFO | logger.py | log_info | Line:73 | Extracted 8 entities
+2026-05-24 16:15:55,271 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:15:55,272 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:15:55,276 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:15:55,980 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:15:55,993 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:16:23,065 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:16:23,069 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:16:23,069 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:16:23,069 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:16:23,570 | INFO | logger.py | log_info | Line:73 | Extracted 11 entities
+2026-05-24 16:16:23,571 | INFO | logger.py | log_info | Line:73 | Extracted 11 entities
+2026-05-24 16:16:23,572 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:16:23,573 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:16:23,573 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:16:24,634 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:16:24,635 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:16:46,751 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:16:46,751 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:16:46,752 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:16:46,752 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:16:47,116 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:16:47,117 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:16:47,117 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:16:47,117 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:16:47,128 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:16:47,839 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:16:47,841 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:17:15,420 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:17:15,421 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:17:15,422 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:17:15,422 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:17:15,777 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:17:15,777 | INFO | logger.py | log_info | Line:73 | Extracted 4 entities
+2026-05-24 16:17:15,777 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:17:15,778 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:17:15,785 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:17:16,789 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:17:16,789 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:17:42,591 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:17:42,592 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:17:42,592 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:17:42,592 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:17:42,980 | INFO | logger.py | log_info | Line:73 | Extracted 5 entities
+2026-05-24 16:17:42,981 | INFO | logger.py | log_info | Line:73 | Extracted 5 entities
+2026-05-24 16:17:42,981 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:17:42,981 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:17:42,990 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:17:43,923 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:17:43,923 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:18:08,906 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:18:08,908 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:18:08,908 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:18:08,908 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:18:09,268 | INFO | logger.py | log_info | Line:73 | Extracted 14 entities
+2026-05-24 16:18:09,269 | INFO | logger.py | log_info | Line:73 | Extracted 14 entities
+2026-05-24 16:18:09,269 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:18:09,270 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:18:09,271 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:18:10,375 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:18:10,375 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:18:31,989 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:18:31,994 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:18:31,994 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:18:31,994 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:18:32,059 | INFO | logger.py | log_info | Line:73 | Extracted 1 entities
+2026-05-24 16:18:32,059 | INFO | logger.py | log_info | Line:73 | Extracted 1 entities
+2026-05-24 16:18:32,060 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:18:32,060 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:18:32,119 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:18:32,135 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:18:32,157 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:18:32,175 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:18:32,191 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:18:39,475 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:18:39,476 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:18:39,476 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:18:39,476 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:18:39,582 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 16:18:39,582 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 16:18:39,583 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:18:39,583 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:18:39,585 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:19:12,938 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:19:12,954 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:19:13,002 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:19:13,002 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:19:20,744 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:19:20,744 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:19:20,744 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:19:20,744 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:19:20,847 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 16:19:20,847 | INFO | logger.py | log_info | Line:73 | Extracted 22 entities
+2026-05-24 16:19:20,847 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:19:20,847 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:19:20,849 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:19:20,998 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:19:21,005 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:19:21,068 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:19:21,069 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:19:35,368 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:19:35,368 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:19:35,368 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:19:35,368 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:19:35,587 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:19:35,587 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:19:35,587 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:19:35,587 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:19:35,591 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:20:55,670 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:20:55,678 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:20:55,791 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:20:55,791 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:21:10,032 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:21:10,033 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:21:10,033 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:21:10,033 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:21:10,265 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:21:10,266 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:21:10,266 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:21:10,266 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:21:10,271 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:26:34,291 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:26:34,301 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:26:42,438 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:26:59,817 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:27:20,881 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:27:21,334 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:27:22,255 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:27:22,256 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:28:04,283 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:28:04,288 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:28:04,289 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:28:04,290 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:28:06,901 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 16:28:06,902 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 16:28:06,905 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:28:06,905 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:28:06,966 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:28:08,775 | ERROR | logger.py | log_exception | Line:88 | image() got an unexpected keyword argument 'use_container_width'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\app.py", line 621, in <module>
+    st.image(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\streamlit\runtime\metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: image() got an unexpected keyword argument 'use_container_width'
+2026-05-24 16:28:49,803 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:28:49,814 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:28:50,164 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:28:50,996 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:28:50,996 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:29:36,748 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:29:36,755 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:29:36,755 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:29:36,755 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:29:39,561 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 16:29:39,568 | INFO | logger.py | log_info | Line:73 | Extracted 41 entities
+2026-05-24 16:29:39,569 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:29:39,570 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:29:39,590 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:41:06,800 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:41:14,163 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:43:37,212 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:43:43,688 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:43:56,975 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:44:03,541 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:44:18,036 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:44:18,067 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:44:18,136 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:44:18,138 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:44:24,806 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:44:24,806 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:44:24,806 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:44:24,806 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:44:26,292 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 16:44:26,292 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 16:44:26,292 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:44:26,292 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:44:26,292 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:44:26,307 | ERROR | logger.py | log_exception | Line:88 | image() got an unexpected keyword argument 'use_container_width'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\app.py", line 694, in <module>
+    st.image(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\streamlit\runtime\metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: image() got an unexpected keyword argument 'use_container_width'
+2026-05-24 16:44:53,909 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:44:53,909 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:44:53,916 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:44:53,950 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:44:53,950 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:44:59,604 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:44:59,612 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:44:59,612 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:44:59,612 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:45:00,560 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 16:45:00,563 | INFO | logger.py | log_info | Line:73 | Extracted 17 entities
+2026-05-24 16:45:00,563 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:45:00,563 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:45:00,565 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:49:27,248 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:49:27,252 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:49:27,256 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:49:28,064 | ERROR | logger.py | log_exception | Line:88 | ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+Traceback (most recent call last):
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 1349, in getresponse
+    response.begin()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 1349, in getresponse
+    response.begin()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\app.py", line 413, in <module>
+    result = response.json()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-05-24 16:49:28,065 | ERROR | logger.py | log_exception | Line:88 | ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+Traceback (most recent call last):
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 1349, in getresponse
+    response.begin()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 1349, in getresponse
+    response.begin()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\http\client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\app.py", line 407, in <module>
+    response = requests.post(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-05-24 16:49:33,890 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:49:40,024 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:49:40,065 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:49:40,115 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:49:40,116 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:49:48,582 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:49:48,597 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:49:48,597 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:49:48,597 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:49:49,489 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:49:49,489 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:49:49,490 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:49:49,491 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:49:49,493 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:52:15,904 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:52:15,911 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:52:15,925 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:52:15,967 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:52:15,968 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:52:23,644 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:52:23,645 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:52:23,645 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:52:23,645 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:52:25,078 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:52:25,080 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-24 16:52:25,080 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:52:25,081 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:52:25,083 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:54:50,583 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:55:24,504 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:55:31,392 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 16:55:38,154 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:55:38,178 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:55:38,234 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:55:38,236 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:55:48,701 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:55:48,701 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:55:48,702 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:55:48,702 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:55:50,069 | INFO | logger.py | log_info | Line:73 | Extracted 20 entities
+2026-05-24 16:55:50,069 | INFO | logger.py | log_info | Line:73 | Extracted 20 entities
+2026-05-24 16:55:50,070 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:55:50,070 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:55:50,072 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 16:56:18,308 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 16:56:18,333 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 16:56:18,569 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 16:56:18,570 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 16:56:47,936 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:56:47,937 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 16:56:47,937 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 16:56:47,937 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 16:56:48,491 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:56:48,491 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 16:56:48,491 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 16:56:48,491 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 16:56:48,492 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 17:00:20,067 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-24 17:00:20,077 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-24 17:00:20,114 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-24 17:00:20,350 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-24 17:00:20,350 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-24 17:01:04,789 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 17:01:04,798 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-24 17:01:04,799 | INFO | logger.py | log_info | Line:73 | Document classified as: Document
+2026-05-24 17:01:04,799 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-24 17:01:07,447 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 17:01:07,453 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-24 17:01:07,455 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-24 17:01:07,455 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-24 17:01:07,473 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-24 17:03:47,872 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-25 19:02:47,917 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-25 19:02:47,945 | INFO | logger.py | log_info | Line:73 | File conversion completed
+2026-05-25 19:02:48,132 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-25 19:02:48,132 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-25 19:03:34,408 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:03:34,426 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:03:34,427 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-25 19:03:34,436 | INFO | logger.py | log_info | Line:73 | Document classified as Resume
+2026-05-25 19:03:34,436 | INFO | logger.py | log_info | Line:73 | Document classified as: Resume
+2026-05-25 19:03:34,439 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-25 19:03:38,712 | INFO | logger.py | log_info | Line:73 | Extracted 1 entities
+2026-05-25 19:03:38,713 | INFO | logger.py | log_info | Line:73 | Extracted 1 entities
+2026-05-25 19:03:38,713 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-25 19:03:38,713 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-25 19:10:52,348 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-25 19:10:52,370 | INFO | logger.py | log_info | Line:73 | File conversion completed
+2026-05-25 19:10:52,557 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-25 19:10:52,557 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-25 19:11:31,377 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:11:31,386 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:11:31,386 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-25 19:11:31,388 | INFO | logger.py | log_info | Line:73 | Document classified as Resume
+2026-05-25 19:11:31,388 | INFO | logger.py | log_info | Line:73 | Document classified as: Resume
+2026-05-25 19:11:31,389 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-25 19:11:33,979 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-25 19:11:33,979 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-25 19:11:33,980 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-25 19:11:33,980 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-25 19:15:13,967 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-25 19:15:14,011 | INFO | logger.py | log_info | Line:73 | File conversion completed
+2026-05-25 19:15:14,286 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-25 19:15:14,286 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-25 19:15:16,265 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-25 19:15:16,292 | INFO | logger.py | log_info | Line:73 | File conversion completed
+2026-05-25 19:15:16,363 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-25 19:15:16,363 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-25 19:15:25,919 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:15:25,919 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:15:25,919 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-25 19:15:25,920 | WARNING | logger.py | log_warning | Line:78 | Could not confidently classify document
+2026-05-25 19:15:25,920 | INFO | logger.py | log_info | Line:73 | Document classified as: Unknown
+2026-05-25 19:15:25,920 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-25 19:15:26,069 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-25 19:15:26,069 | INFO | logger.py | log_info | Line:73 | Extracted 16 entities
+2026-05-25 19:15:26,069 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-25 19:15:26,070 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-25 19:15:45,941 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:15:45,941 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:15:45,941 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-25 19:15:45,941 | INFO | logger.py | log_info | Line:73 | Document classified as Resume
+2026-05-25 19:15:45,942 | INFO | logger.py | log_info | Line:73 | Document classified as: Resume
+2026-05-25 19:15:45,943 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-25 19:15:46,506 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-25 19:15:46,507 | INFO | logger.py | log_info | Line:73 | Extracted 35 entities
+2026-05-25 19:15:46,507 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-25 19:15:46,507 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed
+2026-05-25 19:17:15,923 | INFO | logger.py | log_info | Line:73 | Starting document processing pipeline
+2026-05-25 19:17:15,956 | INFO | logger.py | log_info | Line:73 | File conversion completed
+2026-05-25 19:17:16,117 | INFO | logger.py | log_info | Line:73 | Image preprocessing completed
+2026-05-25 19:17:16,117 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-25 19:17:36,253 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:17:36,253 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-25 19:17:36,253 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-25 19:17:36,253 | INFO | logger.py | log_info | Line:73 | Document classified as Invoice
+2026-05-25 19:17:36,254 | INFO | logger.py | log_info | Line:73 | Document classified as: Invoice
+2026-05-25 19:17:36,254 | INFO | logger.py | log_info | Line:73 | Starting entity extraction
+2026-05-25 19:17:36,572 | INFO | logger.py | log_info | Line:73 | Extracted 37 entities
+2026-05-25 19:17:36,572 | INFO | logger.py | log_info | Line:73 | Extracted 37 entities
+2026-05-25 19:17:36,572 | INFO | logger.py | log_info | Line:73 | Structured output generated
+2026-05-25 19:17:36,573 | INFO | logger.py | log_info | Line:73 | Document processing pipeline completed

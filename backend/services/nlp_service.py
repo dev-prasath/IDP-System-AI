@@ -3,6 +3,7 @@
 # FULL UPDATED VERSION
 # =========================================================
 
+
 from nlp.entity_extractor import (
     extract_entities
 )
