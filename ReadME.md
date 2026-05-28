@@ -339,13 +339,6 @@ Detailed overview of architecture, workflow, and technologies.
 * OpenCV
 * Plotly
 
----
-
-# 📌 Project Status
-
-```text
-Project Completion: ~90%
-```
 
 ---
 
