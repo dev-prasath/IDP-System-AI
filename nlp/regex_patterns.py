@@ -1,118 +1,201 @@
+# =========================================================
+# nlp/regex_patterns.py
+# ENTERPRISE REGEX EXTRACTION ENGINE
+# =========================================================
+
+# =========================================================
+# IMPORTS
+# =========================================================
+
 import re
 
- 
-# EMAIL
- 
+# =========================================================
+# CREATE ENTITY
+# =========================================================
 
-EMAIL_PATTERN = r'[\w\.-]+@[\w\.-]+\.\w+'
+def create_entity(
+    label,
+    text,
+    confidence=0.99
+):
 
- 
-# PHONE
- 
+    return {
 
-PHONE_PATTERN = r'(?:\+91[-\s]?)?[6-9]\d{9}'
+        "label": label,
 
- 
-# PAN
- 
+        "text": str(text).strip(),
 
-PAN_PATTERN = r'[A-Z]{5}[0-9]{4}[A-Z]{1}'
+        "confidence": confidence,
 
- 
-# AADHAAR
- 
+        "source": "regex"
+    }
 
-AADHAAR_PATTERN = r'\b\d{4}\s\d{4}\s\d{4}\b'
+# =========================================================
+# REGEX PATTERNS
+# =========================================================
 
- 
-# GST
- 
+REGEX_PATTERNS = {
 
-GST_PATTERN = (
-    r'\d{2}[A-Z]{5}'
-    r'\d{4}[A-Z]{1}'
-    r'[1-9A-Z]{1}'
-    r'Z'
-    r'[0-9A-Z]{1}'
-)
+    # =====================================================
+    # EMAIL
+    # =====================================================
 
- 
-# DATE
- 
+    "EMAIL": [
 
-DATE_PATTERN = (
-    r'\b\d{2}[/-]\d{2}[/-]\d{4}\b'
-)
+        r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+    ],
 
- 
-# AMOUNT
- 
+    # =====================================================
+    # PHONE
+    # =====================================================
 
-AMOUNT_PATTERN = (
-    r'(?:₹|\$)?\s?'
-    r'\d+(?:,\d{3})*(?:\.\d{2})?'
-)
+    "PHONE": [
 
- 
-# INVOICE NUMBER
- 
+        r'(?:\+91[\-\s]?)?[6-9]\d{9}\b'
+    ],
 
-INVOICE_PATTERN = (
-    r'(?:INV|Invoice|Bill)[-:\s]*'
-    r'[A-Z0-9\-]+'
-)
+    # =====================================================
+    # DATE
+    # =====================================================
 
- 
-# PINCODE
- 
+    "DATE": [
 
-PINCODE_PATTERN = r'\b[1-9][0-9]{5}\b'
+        r'\b\d{2}/\d{2}/\d{4}\b',
 
- 
-# PASSPORT
- 
+        r'\b\d{2}-\d{2}-\d{4}\b'
+    ],
 
-PASSPORT_PATTERN = r'\b[A-Z][0-9]{7}\b'
+    # =====================================================
+    # GST
+    # =====================================================
 
- 
+    "GST": [
+
+        r'\b\d{2}[A-Z]{5}\d{4}[A-Z]{1}[A-Z\d]{1}[Z]{1}[A-Z\d]{1}\b'
+    ],
+
+    # =====================================================
+    # PAN
+    # =====================================================
+
+    "PAN": [
+
+        r'\b[A-Z]{5}[0-9]{4}[A-Z]{1}\b'
+    ],
+
+    # =====================================================
+    # AADHAAR
+    # =====================================================
+
+    "AADHAAR": [
+
+        r'\b\d{4}\s\d{4}\s\d{4}\b'
+    ],
+
+    # =====================================================
+    # INVOICE NUMBER
+    # =====================================================
+
+    "INVOICE_NUMBER": [
+
+    r'(?:Invoice\s*(?:No|Number|#|No.)\s*[:\-]?\s*)([A-Z0-9\-]{3,})'
+    ],
+
+    # =====================================================
+    # TOTAL AMOUNT
+    # =====================================================
+
+    "AMOUNT": [
+
+        # Currency amounts only
+
+        r'(?:₹|\$|Rs\.?)\s?\d[\d,]*\.\d{2}',
+
+        # Large decimal amounts only
+
+        r'\b\d{1,3}(?:,\d{3})+\.\d{2}\b'
+    ]
+}
+
+# =========================================================
 # EXTRACT REGEX ENTITIES
- 
+# =========================================================
 
 def extract_regex_entities(text):
 
-    extracted_entities = []
+    entities = []
 
-    patterns = {
+    try:
 
-        "EMAIL": EMAIL_PATTERN,
-        "PHONE": PHONE_PATTERN,
-        "PAN": PAN_PATTERN,
-        "AADHAAR": AADHAAR_PATTERN,
-        "GST": GST_PATTERN,
-        "DATE": DATE_PATTERN,
-        "AMOUNT": AMOUNT_PATTERN,
-        "INVOICE_NUMBER": INVOICE_PATTERN,
-        "PINCODE": PINCODE_PATTERN,
-        "PASSPORT": PASSPORT_PATTERN
-    }
+        if not text:
 
-    for label, pattern in patterns.items():
+            return []
 
-        matches = re.findall(
-            pattern,
-            text,
-            re.IGNORECASE
+        # =================================================
+        # ITERATE PATTERNS
+        # =================================================
+
+        for label, patterns in REGEX_PATTERNS.items():
+
+            for pattern in patterns:
+
+                matches = re.finditer(
+
+                    pattern,
+
+                    text,
+
+                    re.IGNORECASE
+                )
+
+                for match in matches:
+
+                    # =====================================
+                    # HANDLE GROUPS
+                    # =====================================
+
+                    if match.groups():
+
+                        entity_text = match.group(1)
+
+                    else:
+
+                        entity_text = match.group()
+
+                    entity_text = str(
+                        entity_text
+                    ).strip()
+
+                    # =====================================
+                    # SKIP SMALL JUNK
+                    # =====================================
+
+                    if len(entity_text) < 2:
+
+                        continue
+
+                    # =====================================
+                    # CREATE ENTITY
+                    # =====================================
+
+                    entities.append(
+
+                        create_entity(
+
+                            label=label,
+
+                            text=entity_text,
+
+                            confidence=0.99
+                        )
+                    )
+
+        return entities
+
+    except Exception as e:
+
+        print(
+            f"Regex Extraction Error: {str(e)}"
         )
 
-        for match in matches:
-
-            extracted_entities.append({
-
-                "label": label,
-
-                "text": str(match),
-
-                "confidence": 0.99
-            })
-
-    return extracted_entities
+        return []

@@ -1,15 +1,21 @@
 # =========================================================
 # backend/services/classification_service.py
-# ADVANCED VERSION
+# FULL UPDATED VERSION
+# HYBRID TEXT DOCUMENT CLASSIFIER
+# =========================================================
+
+# =========================================================
+# IMPORTS
 # =========================================================
 
 from utils.logger import (
     log_info,
-    log_warning
+    log_warning,
+    log_error
 )
 
 # =========================================================
-# KEYWORDS
+# KEYWORD DATABASE
 # =========================================================
 
 INVOICE_KEYWORDS = [
@@ -22,7 +28,14 @@ INVOICE_KEYWORDS = [
     "total amount",
     "amount due",
     "purchase order",
-    "subtotal"
+    "subtotal",
+    "cgst",
+    "sgst",
+    "igst",
+    "tax",
+    "vendor",
+    "qty",
+    "rate"
 ]
 
 RESUME_KEYWORDS = [
@@ -35,7 +48,13 @@ RESUME_KEYWORDS = [
     "linkedin",
     "github",
     "portfolio",
-    "professional summary"
+    "professional summary",
+    "internship",
+    "technical skills",
+    "career objective",
+    "work experience",
+    "resume",
+    "curriculum vitae"
 ]
 
 ID_CARD_KEYWORDS = [
@@ -46,7 +65,10 @@ ID_CARD_KEYWORDS = [
     "passport",
     "driving licence",
     "id number",
-    "gender"
+    "gender",
+    "uidai",
+    "dob",
+    "identity"
 ]
 
 MEDICAL_KEYWORDS = [
@@ -57,7 +79,11 @@ MEDICAL_KEYWORDS = [
     "hospital",
     "doctor",
     "blood pressure",
-    "medical report"
+    "medical report",
+    "medicine",
+    "clinical",
+    "symptoms",
+    "treatment"
 ]
 
 REPORT_KEYWORDS = [
@@ -66,15 +92,28 @@ REPORT_KEYWORDS = [
     "summary",
     "findings",
     "conclusion",
-    "report"
+    "report",
+    "research",
+    "observations",
+    "results",
+    "methodology"
+]
+
+LETTER_KEYWORDS = [
+
+    "dear sir",
+    "regards",
+    "sincerely",
+    "subject",
+    "letter",
+    "respected sir"
 ]
 
 # =========================================================
-# SCORE DOCUMENT TYPE
+# SCORE CALCULATOR
 # =========================================================
 
 def calculate_score(
-
     text,
     keywords
 ):
@@ -85,26 +124,58 @@ def calculate_score(
 
     score = 0
 
+    matched_keywords = []
+
     for keyword in keywords:
 
         if keyword in text:
 
             score += 1
 
-    return score
+            matched_keywords.append(
+                keyword
+            )
+
+    return score, matched_keywords
 
 # =========================================================
-# DOCUMENT CLASSIFICATION
+# NORMALIZE TEXT
+# =========================================================
+
+def normalize_text(text):
+
+    if text is None:
+
+        return ""
+
+    text = str(text)
+
+    text = text.lower()
+
+    text = text.replace(
+        "\n",
+        " "
+    )
+
+    text = text.replace(
+        "\t",
+        " "
+    )
+
+    return text.strip()
+
+# =========================================================
+# DOCUMENT CLASSIFIER
 # =========================================================
 
 def classify_document(text):
 
     """
-    Intelligent document classifier.
+    Hybrid text-based
+    document classifier.
 
     Args:
-        text (str):
-            OCR extracted text
+        text (str)
 
     Returns:
         str:
@@ -114,42 +185,169 @@ def classify_document(text):
     try:
 
         log_info(
-            "Starting document classification"
+            "Starting text classification"
         )
 
-        text = text.lower()
+        # =================================================
+        # VALIDATION
+        # =================================================
+
+        if text is None:
+
+            return "Unknown"
+
+        text = normalize_text(
+            text
+        )
+
+        if len(text.strip()) == 0:
+
+            return "Unknown"
+
+        # =================================================
+        # LIMIT HUGE TEXT
+        # =================================================
+
+        MAX_TEXT_LENGTH = 10000
+
+        if len(text) > MAX_TEXT_LENGTH:
+
+            text = text[
+                :MAX_TEXT_LENGTH
+            ]
 
         # =================================================
         # CALCULATE SCORES
         # =================================================
 
-        scores = {
+        scores = {}
 
-            "Invoice": calculate_score(
+        matched = {}
+
+        invoice_score, invoice_matches = (
+            calculate_score(
                 text,
                 INVOICE_KEYWORDS
-            ),
+            )
+        )
 
-            "Resume": calculate_score(
+        scores["Invoice"] = (
+            invoice_score
+        )
+
+        matched["Invoice"] = (
+            invoice_matches
+        )
+
+        # =================================================
+
+        resume_score, resume_matches = (
+            calculate_score(
                 text,
                 RESUME_KEYWORDS
-            ),
+            )
+        )
 
-            "ID Card": calculate_score(
+        scores["Resume"] = (
+            resume_score
+        )
+
+        matched["Resume"] = (
+            resume_matches
+        )
+
+        # =================================================
+
+        id_score, id_matches = (
+            calculate_score(
                 text,
                 ID_CARD_KEYWORDS
-            ),
+            )
+        )
 
-            "Medical Document": calculate_score(
+        scores["ID Card"] = (
+            id_score
+        )
+
+        matched["ID Card"] = (
+            id_matches
+        )
+
+        # =================================================
+
+        medical_score, medical_matches = (
+            calculate_score(
                 text,
                 MEDICAL_KEYWORDS
-            ),
+            )
+        )
 
-            "Report": calculate_score(
+        scores["Medical Document"] = (
+            medical_score
+        )
+
+        matched["Medical Document"] = (
+            medical_matches
+        )
+
+        # =================================================
+
+        report_score, report_matches = (
+            calculate_score(
                 text,
                 REPORT_KEYWORDS
             )
-        }
+        )
+
+        scores["Report"] = (
+            report_score
+        )
+
+        matched["Report"] = (
+            report_matches
+        )
+
+        # =================================================
+
+        letter_score, letter_matches = (
+            calculate_score(
+                text,
+                LETTER_KEYWORDS
+            )
+        )
+
+        scores["Letter"] = (
+            letter_score
+        )
+
+        matched["Letter"] = (
+            letter_matches
+        )
+
+        # =================================================
+        # DEBUG SCORES
+        # =================================================
+
+        print(
+            "\n========== TEXT CLASSIFIER =========="
+        )
+
+        print(
+            "\nDOCUMENT SCORES:\n"
+        )
+
+        for doc_type, score in scores.items():
+
+            print(
+                f"{doc_type}: {score}"
+            )
+
+            print(
+                f"Matched Keywords: "
+                f"{matched[doc_type]}"
+            )
+
+            print()
 
         # =================================================
         # FIND BEST MATCH
@@ -173,21 +371,34 @@ def classify_document(text):
         if max_score == 0:
 
             log_warning(
-                "Could not confidently classify document"
+                "Low confidence classification"
             )
 
             return "Unknown"
 
+        # =================================================
+        # FINAL RESULT
+        # =================================================
+
         log_info(
-            f"Document classified as "
+            f"Text classified as "
             f"{document_type}"
+        )
+
+        print(
+            f"\nFINAL CLASSIFICATION: "
+            f"{document_type}"
+        )
+
+        print(
+            f"SCORE: {max_score}"
         )
 
         return document_type
 
     except Exception as e:
 
-        log_warning(
+        log_error(
             f"Classification Error: {str(e)}"
         )
 

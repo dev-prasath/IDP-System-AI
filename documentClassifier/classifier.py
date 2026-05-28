@@ -1,107 +1,125 @@
-import re
+# =====================================================
+# IMPORTS
+# =====================================================
 
+import json
+import numpy as np
 
-def classify_document(text):
+from PIL import Image
 
-    text = text.lower()
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.layers import (
+    Dense,
+    Dropout,
+    GlobalAveragePooling2D
+)
+from tensorflow.keras.models import Sequential
 
-    # Remove extra spaces
-    text = re.sub(r"\s+", " ", text)
+# =====================================================
+# PATHS
+# =====================================================
 
-    scores = {
-        "Invoice": 0,
-        "Resume": 0,
-        "ID Card": 0,
-        "Healthcare Document": 0,
-        "Insurance Document": 0,
-        "Logistics Document": 0,
-        "Government Document": 0
+WEIGHTS_PATH = r"E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\document_classifier.weights.h5"
+
+LABEL_PATH = r"E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\document_labels.json"
+
+# =====================================================
+# LOAD LABELS
+# =====================================================
+
+with open(LABEL_PATH, "r") as f:
+
+    labels = json.load(f)
+
+print("✅ Labels loaded")
+
+# =====================================================
+# REBUILD MODEL ARCHITECTURE
+# =====================================================
+
+print("Building MobileNetV2 architecture...")
+
+base_model = MobileNetV2(
+
+    weights="imagenet",
+    include_top=False,
+    input_shape=(224, 224, 3)
+
+)
+
+base_model.trainable = False
+
+model = Sequential([
+
+    base_model,
+
+    GlobalAveragePooling2D(),
+
+    Dropout(0.3),
+
+    Dense(256, activation="relu"),
+
+    Dropout(0.3),
+
+    Dense(16, activation="softmax")
+
+])
+
+# =====================================================
+# LOAD WEIGHTS
+# =====================================================
+
+print("Loading weights...")
+
+model.load_weights(WEIGHTS_PATH)
+
+print("✅ Weights loaded successfully!")
+
+# =====================================================
+# IMAGE PREPROCESSING
+# =====================================================
+
+def preprocess_image(image):
+
+    image = image.resize((224, 224))
+
+    image = np.array(image)
+
+    image = image.astype("float32") / 255.0
+
+    image = np.expand_dims(image, axis=0)
+
+    return image
+
+# =====================================================
+# CLASSIFIER
+# =====================================================
+
+def classify_document(image):
+
+    processed_image = preprocess_image(image)
+
+    predictions = model.predict(processed_image)
+
+    predicted_index = int(np.argmax(predictions))
+
+    confidence = float(np.max(predictions)) * 100
+
+    # Reverse label mapping
+    index_to_label = {
+
+        value: key
+
+        for key, value in labels.items()
+
     }
 
-    # Invoice Keywords
-    invoice_keywords = [
-        "invoice",
-        "gst",
-        "tax invoice",
-        "invoice number",
-        "bill to",
-        "total amount",
-        "amount"
-    ]
+    predicted_label = index_to_label[predicted_index]
 
-    # Resume Keywords
-    resume_keywords = [
-        "education",
-        "skills",
-        "experience",
-        "projects",
-        "internship",
-        "linkedin",
-        "github"
-    ]
+    return {
 
-    # ID Card Keywords
-    id_keywords = [
-        "government of india",
-        "aadhaar",
-        "date of birth",
-        "dob",
-        "pan",
-        "uid"
-    ]
+        "document_type": predicted_label,
 
-    # Healthcare Keywords
-    healthcare_keywords = [
-        "hospital",
-        "patient",
-        "diagnosis",
-        "prescription",
-        "doctor"
-    ]
+        "confidence": round(confidence, 2)
 
-    # Insurance Keywords
-    insurance_keywords = [
-        "policy",
-        "claim",
-        "insured",
-        "premium"
-    ]
-
-    # Logistics Keywords
-    logistics_keywords = [
-        "shipment",
-        "consignee",
-        "tracking",
-        "delivery"
-    ]
-
-    # Government Keywords
-    government_keywords = [
-        "application form",
-        "department",
-        "citizen",
-        "registration"
-    ]
-
-    # Scoring Function
-    def calculate_score(keywords, category):
-
-        for keyword in keywords:
-
-            if keyword in text:
-                scores[category] += 1
-
-    calculate_score(invoice_keywords, "Invoice")
-    calculate_score(resume_keywords, "Resume")
-    calculate_score(id_keywords, "ID Card")
-    calculate_score(healthcare_keywords, "Healthcare Document")
-    calculate_score(insurance_keywords, "Insurance Document")
-    calculate_score(logistics_keywords, "Logistics Document")
-    calculate_score(government_keywords, "Government Document")
-
-    predicted_class = max(scores, key=scores.get)
-
-    if scores[predicted_class] == 0:
-        return "Unknown Document"
-
-    return predicted_class
+    }

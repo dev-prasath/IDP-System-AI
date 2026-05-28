@@ -3,7 +3,11 @@
 # FIXED VERSION
 # =========================================================
 
-from ocr.easyocr_engine import (
+# from ocr.easyocr_engine import (
+#     extract_text_and_boxes
+# )
+
+from ocr.paddle_ocr import (
     extract_text_and_boxes
 )
 

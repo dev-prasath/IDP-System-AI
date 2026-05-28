@@ -1,34 +1,45 @@
 # =========================================================
 # backend/services/document_service.py
-# STREAMLIT CLOUD DEPLOYMENT READY VERSION
+# ENTERPRISE IDP PIPELINE
+# OCR + LAYOUT AI + NLP + HYBRID FUSION
 # =========================================================
 
 # =========================================================
 # IMPORTS
 # =========================================================
 
-import numpy as np
+import traceback
+
 from PIL import Image
+import numpy as np
 
 # =========================================================
-# PREPROCESSING
-# =========================================================
-
-from preprocessing.image_processing import (
-    preprocess_image
-)
-
-# =========================================================
-# SERVICES
+# OCR SERVICE
 # =========================================================
 
 from backend.services.ocr_service import (
     process_ocr
 )
 
+# =========================================================
+# NLP SERVICE
+# =========================================================
+
 from backend.services.nlp_service import (
     process_entities
 )
+
+# =========================================================
+# HYBRID ENTITY ENGINE
+# =========================================================
+
+from nlp.hybrid_entityengine import (
+    process_hybrid_entities
+)
+
+# =========================================================
+# CLASSIFICATION SERVICE
+# =========================================================
 
 from backend.services.classification_service import (
     classify_document
@@ -43,14 +54,6 @@ from utils.structure_output import (
 )
 
 # =========================================================
-# RESPONSE BUILDER
-# =========================================================
-
-from utils.response_builder import (
-    build_response
-)
-
-# =========================================================
 # LOGGER
 # =========================================================
 
@@ -61,409 +64,582 @@ from utils.logger import (
 )
 
 # =========================================================
-# CONVERT STREAMLIT FILE TO IMAGE
+# PDF HANDLER
 # =========================================================
 
-def convert_uploaded_file_to_image(uploaded_file):
+from utils.pdf_handler import (
+    pdf_to_images
+)
 
-    """
-    Converts Streamlit UploadedFile
-    into OpenCV/Numpy compatible image.
-    """
+# =========================================================
+# IMAGE PROCESSING
+# =========================================================
 
-    try:
+from preprocessing.image_processing import (
+    preprocess_image
+)
 
-        uploaded_file.seek(0)
+# =========================================================
+# LAYOUT INTELLIGENCE ENGINE
+# =========================================================
 
-        pil_image = Image.open(
-            uploaded_file
-        ).convert("RGB")
+from layout_extraction.layout_parser import (
+    parse_document_layout
+)
 
-        image = np.array(
-            pil_image
-        )
-
-        return image
-
-    except Exception as e:
-
-        log_exception(
-            f"Image Conversion Error: {str(e)}"
-        )
-
-        return None
-
+from PIL import Image
+import numpy as np
 # =========================================================
 # PROCESS DOCUMENT
 # =========================================================
 
 def process_document(uploaded_file):
 
-    """
-    Complete Intelligent Document
-    Processing Pipeline.
+    # =============================================
+    # HANDLE INPUT TYPES
+    # =============================================
 
-    Steps:
-    1. File Conversion
-    2. Image Preprocessing
-    3. OCR Extraction
-    4. Document Classification
-    5. NLP Entity Extraction
-    6. Structured Output Generation
-    7. Final Response Construction
+    is_pil_image = isinstance(
+        uploaded_file,
+        Image.Image
+    )
+
+    is_numpy_image = isinstance(
+        uploaded_file,
+        np.ndarray
+    )
+    """
+    Main intelligent document processing pipeline.
+
+    Pipeline:
+        OCR
+        ↓
+        Spatial Layout Analysis
+        ↓
+        Table Extraction
+        ↓
+        Key-Value Extraction
+        ↓
+        NLP Extraction
+        ↓
+        Hybrid Entity Fusion
+        ↓
+        Structured JSON Output
     """
 
     try:
 
+        # =================================================
+        # START LOG
+        # =================================================
+
         log_info(
-            "Starting document processing pipeline"
+            "Starting document processing"
         )
 
         # =================================================
-        # FILE CONVERSION
+        # VALIDATION
         # =================================================
 
-        try:
+        if uploaded_file is None:
 
-            document_image = (
-                convert_uploaded_file_to_image(
+            raise ValueError(
+                "Uploaded file is None"
+            )
+
+        # =================================================
+        # FILE TYPE
+        # =================================================
+
+        if is_pil_image or is_numpy_image:
+
+            file_type = "image/jpeg"
+
+        else:
+
+            file_type = getattr(
+                uploaded_file,
+                "type",
+                "image/jpeg"
+            )
+
+        # =================================================
+        # STORAGE VARIABLES
+        # =================================================
+
+        all_text = []
+        all_boxes = []
+        all_entities = []
+
+        layout_fields = {}
+        table_data = []
+
+        pages = 1
+
+        ocr_confidences = []
+
+        classification_confidence = 95.0
+
+        # =================================================
+        # HANDLE PDF
+        # =================================================
+
+        if file_type == "application/pdf":
+
+            log_info(
+                "Processing PDF document"
+            )
+
+            uploaded_file.seek(0)
+
+            pdf_images = pdf_to_images(
+                uploaded_file
+            )
+
+            if not pdf_images:
+
+                raise ValueError(
+                    "Failed to convert PDF pages"
+                )
+
+            pages = len(pdf_images)
+
+            document_images = pdf_images
+
+        # =================================================
+        # HANDLE IMAGE
+        # =================================================
+
+        else:
+
+            log_info(
+                "Processing image document"
+            )
+
+            # =============================================
+            # PIL IMAGE INPUT
+            # =============================================
+
+            if is_pil_image:
+
+                pil_image = uploaded_file.convert(
+                    "RGB"
+                )
+
+            # =============================================
+            # NUMPY IMAGE INPUT
+            # =============================================
+
+            elif is_numpy_image:
+
+                pil_image = Image.fromarray(
                     uploaded_file
-                )
-            )
+                ).convert("RGB")
 
-            if document_image is None:
+            # =============================================
+            # FILE OBJECT INPUT
+            # =============================================
 
-                raise ValueError(
-                    "Failed to load image"
-                )
+            else:
 
-            log_info(
-                "File conversion completed"
-            )
+                uploaded_file.seek(0)
 
-        except Exception as conversion_error:
+                pil_image = Image.open(
+                    uploaded_file
+                ).convert("RGB")
 
-            log_exception(
-                f"File Conversion Error: "
-                f"{str(conversion_error)}"
-            )
-
-            return {
-
-                "success": False,
-
-                "message": (
-                    "Document conversion failed"
-                ),
-
-                "error": str(
-                    conversion_error
-                )
-            }
+            document_images = [
+                pil_image
+            ]
 
         # =================================================
-        # IMAGE PREPROCESSING
+        # PROCESS EACH PAGE
         # =================================================
 
-        try:
+        for page_index, image in enumerate(
+            document_images
+        ):
 
-            processed_image = preprocess_image(
-                document_image
-            )
+            try:
 
-            if processed_image is None:
-
-                raise ValueError(
-                    "Preprocessed image is None"
+                print(
+                    f"\n========== PAGE {page_index + 1} ==========\n"
                 )
 
-            log_info(
-                "Image preprocessing completed"
-            )
+                # =============================================
+                # CONVERT TO NUMPY
+                # =============================================
 
-        except Exception as preprocessing_error:
-
-            log_exception(
-                f"Preprocessing Error: "
-                f"{str(preprocessing_error)}"
-            )
-
-            return {
-
-                "success": False,
-
-                "message": (
-                    "Image preprocessing failed"
-                ),
-
-                "error": str(
-                    preprocessing_error
+                image_np = np.array(
+                    image
                 )
-            }
 
-        # =================================================
-        # OCR EXTRACTION
-        # =================================================
+                # =============================================
+                # PREPROCESS IMAGE
+                # =============================================
 
-        try:
-
-            ocr_results = process_ocr(
-                processed_image
-            )
-
-            if not ocr_results.get(
-                "success",
-                False
-            ):
-
-                return {
-
-                    "success": False,
-
-                    "message": (
-                        "OCR extraction failed"
-                    ),
-
-                    "error": ocr_results.get(
-                        "message",
-                        "Unknown OCR error"
-                    )
-                }
-
-            extracted_text = ocr_results.get(
-                "ocr_text",
-                ""
-            )
-
-            boxes = ocr_results.get(
-                "boxes",
-                []
-            )
-
-            ocr_confidence = ocr_results.get(
-                "ocr_confidence",
-                0.0
-            )
-
-            log_info(
-                "OCR extraction completed"
-            )
-
-        except Exception as ocr_error:
-
-            log_exception(
-                f"OCR Error: {str(ocr_error)}"
-            )
-
-            return {
-
-                "success": False,
-
-                "message": (
-                    "OCR processing crashed"
-                ),
-
-                "error": str(ocr_error)
-            }
-
-        # =================================================
-        # EMPTY OCR CHECK
-        # =================================================
-
-        if not extracted_text.strip():
-
-            return {
-
-                "success": False,
-
-                "message": (
-                    "No text extracted from document"
+                processed_image = preprocess_image(
+                    image_np
                 )
-            }
+
+                # =============================================
+                # OCR
+                # =============================================
+
+                ocr_result = process_ocr(
+                    processed_image
+                )
+
+                if not ocr_result.get(
+                    "success",
+                    False
+                ):
+
+                    continue
+
+                page_text = ocr_result.get(
+                    "ocr_text",
+                    ""
+                )
+
+                page_boxes = ocr_result.get(
+                    "boxes",
+                    []
+                )
+
+                page_confidence = ocr_result.get(
+                    "ocr_confidence",
+                    0.0
+                )
+
+                # =============================================
+                # STORE OCR RESULTS
+                # =============================================
+
+                all_text.append(
+                    page_text
+                )
+
+                all_boxes.extend(
+                    page_boxes
+                )
+
+                ocr_confidences.append(
+                    page_confidence
+                )
+
+            except Exception as page_error:
+
+                log_exception(
+                    f"Page Processing Error: {str(page_error)}"
+                )
+
+                continue
+
+        # =================================================
+        # FINAL OCR TEXT
+        # =================================================
+
+        final_ocr_text = "\n".join(
+            all_text
+        )
+
+        # =================================================
+        # OCR VALIDATION
+        # =================================================
+
+        if len(final_ocr_text.strip()) == 0:
+
+            raise ValueError(
+                "No OCR text extracted"
+            )
 
         # =================================================
         # DOCUMENT CLASSIFICATION
         # =================================================
 
-        try:
+        log_info(
+            "Starting document classification"
+        )
 
-            document_type = classify_document(
-                extracted_text
-            )
+        document_type = classify_document(
+            final_ocr_text
+        )
 
-            if not document_type:
-
-                document_type = "Document"
-
-            log_info(
-                f"Document classified as: "
-                f"{document_type}"
-            )
-
-        except Exception as classification_error:
-
-            log_error(
-                f"Classification Error: "
-                f"{str(classification_error)}"
-            )
-
-            document_type = "Document"
+        log_info(
+            f"Detected document type: {document_type}"
+        )
 
         # =================================================
-        # NLP ENTITY EXTRACTION
+        # SPATIAL LAYOUT ANALYSIS
         # =================================================
+
+        log_info(
+            "Starting layout intelligence engine"
+        )
+
+        layout_result = parse_document_layout(
+
+            all_boxes,
+
+            document_type
+        )
+
+        table_data = layout_result.get(
+            "table_data",
+            []
+        )
+        from layout_extraction.invoice_table_parser import (
+            parse_invoice_table
+        )
 
         try:
 
-            nlp_results = process_entities(
-                extracted_text
+            parsed_invoice_table = parse_invoice_table(
+                rows
             )
 
-            if not nlp_results.get(
-                "success",
-                False
-            ):
+        except Exception as invoice_error:
 
-                return {
+            log_exception(
+                f"Invoice Parser Error: "
+                f"{str(invoice_error)}"
+            )
 
-                    "success": False,
+            parsed_invoice_table = []
 
-                    "message": (
-                        "Entity extraction failed"
-                    ),
+        layout_fields = layout_result.get(
+            "key_value_data",
+            {}
+        )
 
-                    "error": nlp_results.get(
-                        "message",
-                        "Unknown NLP error"
-                    )
-                }
+        layout_type = layout_result.get(
+            "layout_type",
+            "unknown"
+        )
 
-            entities = nlp_results.get(
+        summary_data = layout_result.get(
+            "summary_data",
+            {}
+        )
+
+        invoice_details = layout_result.get(
+            "invoice_details",
+            {}
+        )
+
+        rows = layout_result.get(
+            "rows",
+            []
+        )
+
+        # =================================================
+        # DEBUG OUTPUT
+        # =================================================
+
+        print(
+            "\n========== LAYOUT TYPE ==========\n"
+        )
+
+        print(layout_type)
+
+        print(
+            "\n========== LAYOUT FIELDS ==========\n"
+        )
+
+        print(layout_fields)
+
+        print(
+            "\n========== TABLE DATA ==========\n"
+        )
+
+        print(table_data)
+
+        # =================================================
+        # NLP PIPELINE
+        # =================================================
+
+        log_info(
+            "Starting NLP pipeline"
+        )
+
+        nlp_result = process_entities(
+            final_ocr_text
+        )
+
+        if not nlp_result.get(
+            "success",
+            False
+        ):
+
+            nlp_entities = []
+
+        else:
+
+            nlp_entities = nlp_result.get(
                 "entities",
                 []
             )
 
-            log_info(
-                f"Extracted "
-                f"{len(entities)} entities"
-            )
-
-        except Exception as nlp_error:
-
-            log_exception(
-                f"NLP Error: {str(nlp_error)}"
-            )
-
-            return {
-
-                "success": False,
-
-                "message": (
-                    "NLP processing crashed"
-                ),
-
-                "error": str(nlp_error)
-            }
-
         # =================================================
-        # TABLE EXTRACTION
+        # HYBRID ENTITY FUSION
         # =================================================
 
-        table_data = []
+        log_info(
+            "Starting hybrid entity fusion"
+        )
+
+        hybrid_result = process_hybrid_entities(
+
+            nlp_entities=nlp_entities,
+
+            layout_fields=layout_fields,
+
+            table_data=table_data,
+
+            document_type=document_type
+        )
+
+        if not hybrid_result.get(
+            "success",
+            False
+        ):
+
+            all_entities = nlp_entities
+
+        else:
+
+            all_entities = hybrid_result.get(
+                "entities",
+                []
+            )
+
+        log_info(
+            f"Final hybrid entities: {len(all_entities)}"
+        )
 
         # =================================================
         # STRUCTURED OUTPUT
         # =================================================
 
-        try:
+        structured_output = structure_entities(
 
-            structured_output = structure_entities(
+            document_type,
 
-                document_type,
+            all_entities
+        )
 
-                entities
+        # =================================================
+        # MERGE LAYOUT OUTPUT
+        # =================================================
+
+        structured_output[
+            "layout_type"
+        ] = layout_type
+
+        structured_output[
+            "layout_fields"
+        ] = layout_fields
+
+        structured_output[
+            "table_data"
+        ] = table_data
+
+        structured_output[
+            "invoice_details_layout"
+        ] = invoice_details
+
+        structured_output[
+            "invoice_summary"
+        ] = summary_data
+
+        structured_output[
+            "layout_summary"
+        ] = {
+
+            "total_rows": len(rows),
+
+            "total_tables": len(table_data),
+
+            "layout_engine": "Spatial AI"
+        }
+
+        structured_output[
+            "parsed_invoice_table"
+        ] = parsed_invoice_table
+
+        # =================================================
+        # OCR CONFIDENCE
+        # =================================================
+
+        if ocr_confidences:
+
+            average_ocr_confidence = round(
+
+                sum(ocr_confidences)
+
+                / len(ocr_confidences),
+
+                2
             )
 
-            log_info(
-                "Structured output generated"
-            )
+        else:
 
-        except Exception as structure_error:
-
-            log_error(
-                f"Structure Output Error: "
-                f"{str(structure_error)}"
-            )
-
-            structured_output = {
-
-                "document_type": document_type,
-
-                "raw_entities": entities
-            }
+            average_ocr_confidence = 0.0
 
         # =================================================
         # FINAL RESPONSE
         # =================================================
 
-        try:
+        response = {
 
-            final_response = build_response(
+            "success": True,
 
-                document_type=document_type,
+            "document_type": document_type,
 
-                ocr_text=extracted_text,
+            "classification_confidence":
+                classification_confidence,
 
-                boxes=boxes,
+            "ocr_text": final_ocr_text,
 
-                entities=entities,
+            "entities": all_entities,
 
-                ocr_confidence=ocr_confidence,
+            "structured_output":
+                structured_output,
 
-                table_data=table_data
-            )
+            "table_data": table_data,
 
-        except Exception as response_error:
+            "layout_fields": layout_fields,
 
-            log_exception(
-                f"Response Builder Error: "
-                f"{str(response_error)}"
-            )
+            "layout_type": layout_type,
 
-            return {
+            "boxes": all_boxes,
 
-                "success": False,
+            "rows": rows,
 
-                "message": (
-                    "Response building failed"
-                ),
+            "pages": pages,
 
-                "error": str(response_error)
-            }
-
-        # =================================================
-        # ADD STRUCTURED OUTPUT
-        # =================================================
-
-        final_response[
-            "structured_output"
-        ] = structured_output
-
-        # =================================================
-        # SUCCESS RESPONSE
-        # =================================================
-
-        final_response[
-            "success"
-        ] = True
+            "ocr_confidence":
+                average_ocr_confidence
+        }
 
         log_info(
-            "Document processing pipeline completed"
+            "Document processing completed"
         )
 
-        return final_response
+        return response
 
     except Exception as e:
+
+        # =================================================
+        # ERROR HANDLING
+        # =================================================
+
+        print(
+            "\n========== DOCUMENT PROCESSING FAILED ==========\n"
+        )
+
+        traceback.print_exc()
 
         log_exception(
             f"Document Service Error: {str(e)}"
@@ -473,9 +649,29 @@ def process_document(uploaded_file):
 
             "success": False,
 
-            "message": (
-                "Document processing failed"
-            ),
+            "message": str(e),
 
-            "error": str(e)
+            "document_type": "Unknown",
+
+            "classification_confidence": 0,
+
+            "ocr_text": "",
+
+            "entities": [],
+
+            "structured_output": {},
+
+            "table_data": [],
+
+            "layout_fields": {},
+
+            "layout_type": "unknown",
+
+            "boxes": [],
+
+            "rows": [],
+
+            "pages": 0,
+
+            "ocr_confidence": 0.0
         }
