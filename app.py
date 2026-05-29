@@ -23,6 +23,7 @@ import plotly.express as px
 import requests
 
 from PIL import Image
+from storage.s3_storage import upload_file_to_s3
 
 # =========================================================
 # DATABASE
@@ -58,6 +59,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
 
 # =========================================================
 # CONSTANTS
@@ -585,6 +587,17 @@ if menu == "📤 Upload Documents":
                 preview_image = None
 
                 try:
+                    uploaded_file.seek(0)
+
+                    file_bytes = uploaded_file.read()
+
+                    s3_url = upload_file_to_s3(
+                        file_bytes=file_bytes,
+                        file_name=uploaded_file.name,
+                        content_type=uploaded_file.type
+                    )
+
+                    uploaded_file.seek(0)
 
                     uploaded_file.seek(0)
 
@@ -977,12 +990,13 @@ if menu == "📤 Upload Documents":
 
                 try:
 
-                    save_document(
+                   save_document(
                         uploaded_file.name,
                         document_type,
                         ocr_text,
                         entities,
-                        structured_output
+                        structured_output,
+                        s3_url
                     )
 
                 except Exception as db_error:
@@ -1034,7 +1048,8 @@ if menu == "📚 Document History":
                 "document_title",
                 "document_type",
                 "created_at",
-                "structured_output"
+                "structured_output",
+                "s3_url"
             ]
         )
 
@@ -1146,9 +1161,13 @@ if menu == "📚 Document History":
 
             structured_output = doc[4]
 
+            s3_url = doc[5]
+
+            
             with st.expander(
                 f"📄 {document_title}"
             ):
+                
 
                 st.markdown(f"""
                 <div class="glass-card">
@@ -1167,8 +1186,24 @@ if menu == "📚 Document History":
 
                 </div>
                 """, unsafe_allow_html=True)
+                st.markdown("### ☁ AWS Storage")
+
+                if s3_url:
+
+                        st.info(
+                        f"☁ Stored in AWS S3\n\n{s3_url}"
+                    )
+
+                else:
+
+                        st.warning(
+                            "S3 URL not available."
+                        )
+
 
                 st.json(structured_output)
+
+                
 
 # =========================================================
 # ABOUT PROJECT

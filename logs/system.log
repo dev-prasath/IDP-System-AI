@@ -5673,3 +5673,69 @@ ValueError: could not convert string to float: '[3500]'
 2026-05-29 14:53:46,142 | INFO | logger.py | log_info | Line:73 | Document processing completed
 2026-05-29 14:53:46,256 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
 2026-05-29 14:53:46,258 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 21:49:20,699 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:52:16,601 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 21:52:16,618 | INFO | logger.py | log_info | Line:73 | Processing File: Architecture-Payment-Invoice-Template-edit-online-1.jpg
+2026-05-29 21:52:16,651 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 21:52:16,651 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 21:52:16,864 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 21:52:21,145 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 21:52:21,145 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 21:52:21,145 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 21:52:21,146 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 21:52:21,146 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 21:52:21,146 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 21:52:21,164 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 21:52:21,164 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 21:52:21,165 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone_Project\Intelligent_Document_Processing_System\models\spaCy
+2026-05-29 21:52:21,575 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 21:52:21,599 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 21:52:21,603 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 21:52:21,604 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 21:52:21,604 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 21:52:21,604 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 21:52:21,605 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 15 entities
+2026-05-29 21:52:21,605 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 15
+2026-05-29 21:52:21,606 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 21:52:21,608 | ERROR | logger.py | log_exception | Line:88 | save_document() missing 1 required positional argument: 's3_url'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone_Project\Intelligent_Document_Processing_System\backend\api\routes\process_routes.py", line 408, in process_uploaded_document
+    save_document(
+TypeError: save_document() missing 1 required positional argument: 's3_url'
+2026-05-29 21:52:21,614 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 21:55:47,306 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:56:03,188 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:56:14,556 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:56:23,354 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:56:29,594 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:56:38,799 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:56:56,434 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:57:04,826 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:03:30,915 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:03:40,425 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:03:41,274 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:03:49,846 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:04:07,122 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:04:15,543 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:04:38,832 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:04:49,705 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:05:00,006 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:05:08,811 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:05:09,369 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:05:18,300 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:20,316 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:06:28,577 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:34,559 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:06:42,979 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:43,408 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:06:51,868 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:52,518 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:07:01,646 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:07:10,638 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:07:22,541 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:07:22,543 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:07:37,895 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:10:54,033 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:11:04,063 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:11:18,219 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:11:26,873 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully

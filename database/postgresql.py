@@ -120,16 +120,12 @@ def convert_numpy_types(obj):
 # =========================================================
 
 def save_document(
-
     document_title,
-
     document_type,
-
     ocr_text,
-
     entities,
-
-    structured_output
+    structured_output,
+    s3_url
 ):
 
     connection = None
@@ -148,28 +144,21 @@ def save_document(
             INSERT INTO documents (
 
                 document_title,
-
                 document_type,
-
                 ocr_text,
-
                 entities,
-
                 structured_output,
-
+                s3_url,
                 created_at
 
             )
 
-            VALUES (%s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
             """,
 
             (
-
                 document_title,
-
                 document_type,
-
                 ocr_text,
 
                 json.dumps(
@@ -183,6 +172,8 @@ def save_document(
                         structured_output
                     )
                 ),
+
+                s3_url,
 
                 datetime.now()
             )
@@ -232,26 +223,28 @@ def fetch_documents():
 
         cursor.execute("""
 
-            SELECT
+    SELECT
 
-                id,
+        id,
 
-                COALESCE(
-                    document_title,
-                    ''
-                ),
+        COALESCE(
+            document_title,
+            ''
+        ),
 
-                document_type,
+        document_type,
 
-                created_at,
+        created_at,
 
-                structured_output
+        structured_output,
 
-            FROM documents
+        s3_url
 
-            ORDER BY created_at DESC
+    FROM documents
 
-        """)
+    ORDER BY created_at DESC
+
+""")
 
         documents = cursor.fetchall()
 
