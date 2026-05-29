@@ -1,176 +1,280 @@
-# 🧠 Intelligent Document AI Studio
+# 📄 Intelligent Document Processing System
 
-Enterprise-grade Intelligent Document Processing (IDP) System built using OCR, NLP, Computer Vision, Layout Intelligence, and FastAPI.
+AI-powered Intelligent Document Processing (IDP) system built using OCR, NLP, Computer Vision, FastAPI, Streamlit, and PostgreSQL.
 
-The system automatically extracts structured information from unstructured documents such as invoices, resumes, ID cards, reports, and medical documents.
+The system automatically extracts structured information from unstructured documents such as:
+
+- Invoices
+- Resumes
+- ID Cards
+- Reports
+- Forms
+- Healthcare Documents
+
+using Deep Learning, OCR, and Named Entity Recognition (NER).
 
 ---
 
 # 🚀 Features
 
-## 📄 OCR Extraction
+## ✅ OCR Text Extraction
 
-* PaddleOCR Integration
-* EasyOCR Support
-* Multi-format document processing
-* PDF/Image support
+- Multi-format document support
+- PDF, PNG, JPG, JPEG support
+- Multi-page PDF processing
+- OCR visualization with bounding boxes
+- OCR confidence scoring
 
-## 🧠 NLP & Entity Extraction
+### OCR Engines
 
-* spaCy Named Entity Recognition (NER)
-* Regex-based extraction
-* Hybrid entity pipeline
-* Structured field extraction
-
-## 📊 Table Extraction
-
-* Intelligent table parsing
-* Invoice item extraction
-* Row/column detection
-* Structured table outputs
-
-## 📋 Structured Output
-
-* JSON generation
-* Key-value extraction
-* Document-specific parsing
-* Layout-aware extraction
-
-## 📚 Analytics Dashboard
-
-* Document analytics
-* Classification statistics
-* Processing history
-* Interactive charts
-
-## ⬇ Export System
-
-* JSON Export
-* CSV Export
-* Excel Export
-* OCR text download
-
-## ☁ Enterprise Architecture
-
-* FastAPI backend
-* Streamlit frontend
-* PostgreSQL database
-* Modular code structure
+- EasyOCR
+- Tesseract OCR
+- TrOCR (Optional)
 
 ---
 
-# 🏗 System Architecture
+## ✅ NLP Entity Extraction
 
-```text
+Automatically extracts:
+
+- Names
+- Dates
+- Addresses
+- Phone Numbers
+- Emails
+- Invoice Numbers
+- Amounts
+- Skills
+- Education
+- Experience
+
+using:
+
+- HuggingFace Transformers
+- SpaCy
+- Regex Validation
+
+---
+
+## ✅ Intelligent Document Classification
+
+Automatically detects:
+
+- Invoice
+- Resume
+- ID Card
+- Report
+- Medical Document
+
+---
+
+## ✅ AI-Powered Table Extraction
+
+Extracts:
+
+- Invoice tables
+- Structured rows and columns
+- Line items
+- Financial tables
+
+---
+
+## ✅ Streamlit Dashboard
+
+Modern responsive dashboard with:
+
+- Multi-file upload
+- OCR visualization
+- Entity highlighting
+- Structured JSON output
+- Export functionality
+- Document history
+- Search functionality
+
+---
+
+## ✅ FastAPI Backend
+
+REST APIs for:
+
+- Document upload
+- OCR processing
+- NLP extraction
+- Structured response generation
+- Database integration
+
+---
+
+## ✅ PostgreSQL Integration
+
+Stores:
+
+- Uploaded documents
+- OCR text
+- Extracted entities
+- Structured outputs
+- Processing timestamps
+
+---
+
+# 🏗️ System Architecture
+
+```plaintext
 User Upload
+     ↓
+Streamlit Frontend
+     ↓
+FastAPI Backend
      ↓
 Image Preprocessing
      ↓
 OCR Extraction
      ↓
-Layout Analysis
-     ↓
-Table Detection
-     ↓
 NLP + Entity Extraction
      ↓
-Structured Parsing
+Validation + Postprocessing
      ↓
-JSON Generation
+Structured JSON Output
      ↓
-Database Storage
-     ↓
-Analytics + Export
+PostgreSQL Database
 ```
-
----
-
-# 🛠 Technologies Used
-
-## AI / NLP
-
-* spaCy
-* Regex Extraction
-* NLP Entity Recognition
-
-## OCR / Computer Vision
-
-* PaddleOCR
-* EasyOCR
-* OpenCV
-* PDF Processing
-
-## Backend
-
-* FastAPI
-* REST APIs
-* Python
-
-## Frontend
-
-* Streamlit
-* Plotly
-* Modern Enterprise UI
-
-## Database
-
-* PostgreSQL
 
 ---
 
 # 📂 Project Structure
 
-```text
+```plaintext
 Intelligent_Document_Processing_System/
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── .gitignore
+├── .env
 │
 ├── backend/
-│   ├── api/
-│   └── services/
-│
-├── database/
-│
-├── ocr/
-│
-├── nlp/
+│   ├── main.py
+│   ├── routes/
+│   ├── services/
+│   └── schemas/
 │
 ├── preprocessing/
+│   ├── image_processing.py
+│   ├── image_enhancement.py
+│   └── pdf_processing.py
 │
-├── layout_extraction/
+├── ocr/
+│   ├── easyocr_engine.py
+│   ├── tesseract_engine.py
+│   └── trocr_engine.py
+│
+├── nlp/
+│   ├── entity_extractor.py
+│   ├── regex_patterns.py
+│   ├── validators.py
+│   └── postprocessing.py
+│
+├── database/
+│   ├── postgresql.py
+│   └── db_manager.py
 │
 ├── utils/
+│   ├── logger.py
+│   ├── entity_highlighter.py
+│   ├── table_extractor.py
+│   ├── response_builder.py
+│   └── validators.py
 │
+├── uploads/
 ├── exports/
-│
-├── models/
-│
-└── test_documents/
+├── logs/
+├── tests/
+├── assets/
+├── docs/
+└── notebooks/
 ```
+
+---
+
+# 🧠 Technologies Used
+
+## Frontend
+
+- Streamlit
+
+## Backend
+
+- FastAPI
+- Uvicorn
+
+## OCR
+
+- EasyOCR
+- Tesseract OCR
+- TrOCR
+
+## NLP
+
+- HuggingFace Transformers
+- SpaCy
+- Regex
+
+## Computer Vision
+
+- OpenCV
+- Pillow
+
+## Database
+
+- PostgreSQL
+
+## Machine Learning / Deep Learning
+
+- PyTorch
+- Transformers
+
+## Deployment
+
+- Docker
+- Streamlit Cloud
+- HuggingFace Spaces
+
+---
+
+# 📊 Supported Document Types
+
+| Document Type | Supported |
+|---|---|
+| Invoice | ✅ |
+| Resume | ✅ |
+| ID Card | ✅ |
+| Medical Record | ✅ |
+| Report | ✅ |
+| Forms | ✅ |
 
 ---
 
 # ⚙️ Installation
 
-## 1️⃣ Clone Repository
+## 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/intelligent-document-ai.git
+git clone https://github.com/your-username/intelligent-document-processing-system.git
+```
+
+```bash
+cd intelligent-document-processing-system
 ```
 
 ---
 
-## 2️⃣ Create Virtual Environment
+## 2. Create Virtual Environment
+
+### Windows
 
 ```bash
 python -m venv venv
 ```
-
-Activate environment:
-
-### Windows
 
 ```bash
 venv\Scripts\activate
@@ -179,12 +283,16 @@ venv\Scripts\activate
 ### Linux / Mac
 
 ```bash
+python3 -m venv venv
+```
+
+```bash
 source venv/bin/activate
 ```
 
 ---
 
-## 3️⃣ Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -192,43 +300,47 @@ pip install -r requirements.txt
 
 ---
 
-# 🗄 PostgreSQL Setup
+# 🗄️ PostgreSQL Setup
 
-Create a PostgreSQL database.
+## Create Database
 
-Update database configuration inside:
-
-```text
-database/postgresql.py
-```
-
-Example:
-
-```python
-DB_NAME = "document_ai"
-DB_USER = "postgres"
-DB_PASSWORD = "password"
-DB_HOST = "localhost"
-DB_PORT = "5432"
+```sql
+CREATE DATABASE intelligent_document_ai;
 ```
 
 ---
 
-# ▶️ Run FastAPI Backend
+## Update Database Credentials
+
+Inside `.env`
+
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=intelligent_document_ai
+DB_USER=postgres
+DB_PASSWORD=your_password
+```
+
+---
+
+# ▶️ Running the Application
+
+## Step 1 — Start FastAPI Backend
 
 ```bash
-uvicorn backend.api.main:app --reload
+uvicorn backend.main:app --reload
 ```
 
 Backend runs on:
 
-```text
+```plaintext
 http://127.0.0.1:8000
 ```
 
 ---
 
-# ▶️ Run Streamlit Frontend
+## Step 2 — Start Streamlit Frontend
 
 ```bash
 streamlit run app.py
@@ -236,114 +348,151 @@ streamlit run app.py
 
 Frontend runs on:
 
-```text
+```plaintext
 http://localhost:8501
 ```
 
 ---
 
-# 📄 Supported Document Types
+# 📌 API Endpoints
 
-* Invoices
-* Resumes
-* ID Cards
-* Reports
-* Medical Documents
-
----
-
-# 📂 Supported File Formats
-
-* PDF
-* PNG
-* JPG
-* JPEG
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/process-document` | Process uploaded document |
+| GET | `/documents` | Fetch processed documents |
+| GET | `/health` | Health check |
 
 ---
 
-# 🎯 Key Capabilities
+# 📄 Sample Workflow
 
-✅ OCR Text Extraction
-✅ Named Entity Recognition
-✅ Table Detection
-✅ Structured JSON Output
-✅ Layout Intelligence
-✅ Export Functionality
-✅ Analytics Dashboard
-✅ PostgreSQL Storage
-✅ Multi-document Processing
-✅ Enterprise UI
+## Step 1
 
----
+Upload document
 
-# 📊 Outputs Generated
+## Step 2
 
-The system generates:
+Image preprocessing
 
-* Structured JSON
-* Extracted OCR text
-* CSV files
-* Excel reports
-* Entity tables
-* Layout fields
+## Step 3
 
----
+OCR extraction
 
-# 📸 Application Modules
+## Step 4
 
-## 📤 Upload Documents
+Entity extraction using NLP
 
-Upload and process multiple documents using the AI pipeline.
+## Step 5
 
-## 📚 Document History
+Validation and postprocessing
 
-View processed documents, analytics, and extraction history.
+## Step 6
 
-## ℹ️ About Project
+Structured JSON generation
 
-Detailed overview of architecture, workflow, and technologies.
+## Step 7
+
+Save results to PostgreSQL
+
+## Step 8
+
+Display results in Streamlit dashboard
 
 ---
 
-# 🚀 Future Improvements
+# 📊 Sample Structured Output
 
-* Advanced table extraction
-* Custom trained NER model
-* Cloud deployment
-* Multi-language OCR
-* Real-time document processing
-* AI validation engine
-
----
-
-# 🧪 Evaluation Metrics
-
-* OCR Accuracy
-* Entity Extraction Accuracy
-* Table Parsing Quality
-* Processing Speed
-* UI/UX Quality
-* Modular Architecture
-* API Performance
+```json
+{
+    "document_type": "Invoice",
+    "invoice_number": "INV-1024",
+    "vendor_name": "ABC Technologies",
+    "invoice_date": "2026-05-23",
+    "total_amount": "$2500"
+}
+```
 
 ---
 
-# 👨‍💻 Developed Using
+# 🎯 OCR Visualization
 
-* Python
-* FastAPI
-* Streamlit
-* PostgreSQL
-* spaCy
-* PaddleOCR
-* OpenCV
-* Plotly
+The system provides:
 
+- OCR bounding box visualization
+- Text region detection
+- Entity highlighting
+- Confidence scoring
 
 ---
 
-# ❤️ Acknowledgement
+# 📈 Validation Features
 
-This project was developed as an AI-powered Intelligent Document Processing System using OCR, NLP, Computer Vision, and FastAPI-based enterprise architecture.
+The system validates:
+
+- Email formats
+- Phone numbers
+- Dates
+- Invoice numbers
+- Amount fields
+
+using:
+
+- Regex patterns
+- Rule-based validation
+- NLP confidence filtering
 
 ---
+
+# 🔐 Error Handling
+
+The application gracefully handles:
+
+- Invalid file uploads
+- OCR failures
+- API failures
+- Empty documents
+- Corrupted PDFs
+- Unsupported formats
+
+---
+
+# 🧪 Testing
+
+Run tests using:
+
+```bash
+pytest tests/
+```
+---
+
+# 📚 Future Enhancements
+
+- LayoutLM integration
+- Multilingual OCR
+- Human-in-the-loop correction
+- Async batch processing
+- Cloud-native scaling
+- Vector database integration
+- LLM-based document understanding
+
+---
+
+# 👨‍💻 Author
+
+Dev Prasath RP
+
+---
+
+# 🌐 Deployment
+
+Deployment instructions will be added in the final stage of the project.
+
+Possible deployment platforms:
+
+- Streamlit Cloud
+- HuggingFace Spaces
+- Render
+- Railway
+- AWS EC2
+- Docker Deployment
+

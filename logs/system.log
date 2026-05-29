@@ -4739,3 +4739,1003 @@ UnboundLocalError: local variable 'rows' referenced before assignment
 2026-05-28 23:43:43,075 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
 2026-05-28 23:44:36,025 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
 2026-05-28 23:44:45,054 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:07:06,326 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:07:32,085 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:07:32,096 | INFO | logger.py | log_info | Line:73 | Processing File: invoice-template-us-dexter-750px.png
+2026-05-29 10:07:32,108 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:07:32,108 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:07:32,253 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:07:35,609 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:07:35,609 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:07:35,612 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:07:35,613 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 10:07:35,613 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 10:07:35,614 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:07:35,625 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:07:35,625 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:07:35,626 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:07:36,069 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:07:36,091 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-05-29 10:07:36,095 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 10:07:36,096 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 10:07:36,096 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:07:36,096 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:07:36,097 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 13 entities
+2026-05-29 10:07:36,097 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 13
+2026-05-29 10:07:36,098 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 10:07:36,189 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 10:07:36,196 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 10:10:04,435 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:10:39,882 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:10:44,902 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:10:52,610 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:11:08,061 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:11:16,389 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:13:24,164 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:13:32,507 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:13:50,785 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:13:50,794 | INFO | logger.py | log_info | Line:73 | Processing File: Architecture-Payment-Invoice-Template-edit-online-1.jpg
+2026-05-29 10:13:50,831 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:13:50,831 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:13:51,030 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:13:54,763 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:13:54,763 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:13:54,763 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:13:54,764 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 10:13:54,764 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 10:13:54,765 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:13:54,770 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:13:54,770 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:13:54,771 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:13:55,130 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:13:55,147 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 10:13:55,150 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 10:13:55,151 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 10:13:55,151 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:13:55,151 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:13:55,152 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 15 entities
+2026-05-29 10:13:55,152 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 15
+2026-05-29 10:13:55,154 | ERROR | logger.py | log_exception | Line:88 | Document Service Error: could not convert string to float: '[3500]'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\backend\services\document_service.py", line 547, in process_document
+    parsed_invoice = parse_invoice(
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\utils\document_parsers\invoice_parser.py", line 55, in parse_invoice
+    total_amount = max(
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\utils\document_parsers\invoice_parser.py", line 57, in <lambda>
+    key=lambda x: float(
+ValueError: could not convert string to float: '[3500]'
+2026-05-29 10:13:55,156 | ERROR | logger.py | log_error | Line:83 | Image processing failed
+2026-05-29 10:13:55,156 | ERROR | logger.py | log_error | Line:83 | HTTP Exception: Image processing failed
+2026-05-29 10:13:55,156 | INFO | logger.py | log_info | Line:73 | Response Status: 500
+2026-05-29 10:14:52,042 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:15:00,323 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:15:00,329 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:15:00,333 | INFO | logger.py | log_info | Line:73 | Processing File: Architecture-Payment-Invoice-Template-edit-online-1.jpg
+2026-05-29 10:15:00,358 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:15:00,359 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:15:00,511 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:15:04,056 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:15:04,057 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:15:04,057 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:15:04,057 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 10:15:04,058 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 10:15:04,058 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:15:04,063 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:15:04,063 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:15:04,064 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:15:04,475 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:15:04,492 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 10:15:04,495 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 10:15:04,496 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 10:15:04,496 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:15:04,497 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:15:04,498 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 15 entities
+2026-05-29 10:15:04,498 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 15
+2026-05-29 10:15:04,499 | ERROR | logger.py | log_exception | Line:88 | Document Service Error: could not convert string to float: '[3500]'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\backend\services\document_service.py", line 547, in process_document
+    parsed_invoice = parse_invoice(
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\utils\document_parsers\invoice_parser.py", line 55, in parse_invoice
+    total_amount = max(
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\utils\document_parsers\invoice_parser.py", line 57, in <lambda>
+    key=lambda x: float(
+ValueError: could not convert string to float: '[3500]'
+2026-05-29 10:15:04,501 | ERROR | logger.py | log_error | Line:83 | Image processing failed
+2026-05-29 10:15:04,502 | ERROR | logger.py | log_error | Line:83 | HTTP Exception: Image processing failed
+2026-05-29 10:15:04,502 | INFO | logger.py | log_info | Line:73 | Response Status: 500
+2026-05-29 10:16:56,558 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:17:06,117 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:18:02,670 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:18:12,352 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:18:12,354 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:18:20,853 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:27:23,577 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:27:32,694 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:28:00,830 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:28:00,840 | INFO | logger.py | log_info | Line:73 | Processing File: Architecture-Payment-Invoice-Template-edit-online-1.jpg
+2026-05-29 10:28:00,875 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:28:00,876 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:28:01,058 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:28:04,942 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:28:04,942 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:28:04,942 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:28:04,943 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 10:28:04,944 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 10:28:04,944 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:28:04,949 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:28:04,949 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:28:04,949 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:28:05,414 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:28:05,422 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 10:28:05,433 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 10:28:05,435 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 10:28:05,435 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:28:05,435 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:28:05,437 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 15 entities
+2026-05-29 10:28:05,437 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 15
+2026-05-29 10:28:05,439 | ERROR | logger.py | log_exception | Line:88 | Document Service Error: could not convert string to float: '[3500]'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\backend\services\document_service.py", line 547, in process_document
+    parsed_invoice = parse_invoice(
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\utils\document_parsers\invoice_parser.py", line 54, in parse_invoice
+    total_amount = max(
+  File "E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\utils\document_parsers\invoice_parser.py", line 56, in <lambda>
+    key=lambda x: float(
+ValueError: could not convert string to float: '[3500]'
+2026-05-29 10:28:05,441 | ERROR | logger.py | log_error | Line:83 | Image processing failed
+2026-05-29 10:28:05,441 | ERROR | logger.py | log_error | Line:83 | HTTP Exception: Image processing failed
+2026-05-29 10:28:05,442 | INFO | logger.py | log_info | Line:73 | Response Status: 500
+2026-05-29 10:32:36,817 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:32:46,418 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:32:46,419 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:32:55,118 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:33:29,357 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:33:29,368 | INFO | logger.py | log_info | Line:73 | Processing File: Architecture-Payment-Invoice-Template-edit-online-1.jpg
+2026-05-29 10:33:29,401 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:33:29,403 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:33:29,600 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:33:33,862 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:33:33,862 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:33:33,862 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:33:33,864 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 10:33:33,865 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 10:33:33,865 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:33:33,869 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:33:33,870 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:33:33,871 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:33:34,189 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:33:34,206 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 10:33:34,218 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 10:33:34,221 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 10:33:34,221 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:33:34,221 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:33:34,223 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 15 entities
+2026-05-29 10:33:34,223 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 15
+2026-05-29 10:33:34,224 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 10:33:34,309 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 10:33:34,315 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 10:35:41,142 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:35:51,011 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:36:20,172 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:36:20,184 | INFO | logger.py | log_info | Line:73 | Processing File: Architecture-Payment-Invoice-Template-edit-online-1.jpg
+2026-05-29 10:36:20,218 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:36:20,218 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:36:20,406 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:36:24,347 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:36:24,347 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:36:24,347 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:36:24,348 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 10:36:24,348 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 10:36:24,348 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:36:24,354 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:36:24,354 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:36:24,356 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:36:24,809 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:36:24,821 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 10:36:24,826 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 10:36:24,826 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 10:36:24,826 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:36:24,826 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:36:24,829 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 15 entities
+2026-05-29 10:36:24,829 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 15
+2026-05-29 10:36:24,830 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 10:36:24,913 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 10:36:24,918 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 10:43:58,713 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:44:08,511 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:44:15,005 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:44:24,633 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:44:38,436 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:44:48,100 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:45:05,496 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:45:05,511 | INFO | logger.py | log_info | Line:73 | Processing File: Dev_Prasath_RP_Resume_page-0001.jpg
+2026-05-29 10:45:05,535 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:45:05,536 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:45:05,722 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:45:16,323 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:45:16,324 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:45:16,324 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:45:16,326 | INFO | logger.py | log_info | Line:73 | Text classified as Resume
+2026-05-29 10:45:16,326 | INFO | logger.py | log_info | Line:73 | Detected document type: Resume
+2026-05-29 10:45:16,326 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:45:16,333 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:45:16,333 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:45:16,334 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:45:16,857 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:45:16,900 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 10:45:16,905 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-05-29 10:45:16,906 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-05-29 10:45:16,906 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:45:16,907 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:45:16,908 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 10:45:16,908 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 10:45:16,908 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 10:45:17,033 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 10:45:17,042 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 10:47:11,306 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:47:20,976 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:47:24,279 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:47:24,293 | INFO | logger.py | log_info | Line:73 | Processing File: Dev_Prasath_RP_Resume_page-0001.jpg
+2026-05-29 10:47:24,317 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:47:24,317 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:47:24,530 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:47:34,862 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:47:34,862 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:47:34,862 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:47:34,863 | INFO | logger.py | log_info | Line:73 | Text classified as Resume
+2026-05-29 10:47:34,863 | INFO | logger.py | log_info | Line:73 | Detected document type: Resume
+2026-05-29 10:47:34,864 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:47:34,870 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:47:34,871 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:47:34,872 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:47:35,283 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:47:35,325 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 10:47:35,330 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-05-29 10:47:35,330 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-05-29 10:47:35,330 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:47:35,331 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:47:35,331 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 10:47:35,331 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 10:47:35,332 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 10:47:35,419 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 10:47:35,424 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 10:48:48,925 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:48:58,805 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:48:58,806 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:49:08,438 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:49:21,699 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:49:31,136 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:49:37,611 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:49:37,622 | INFO | logger.py | log_info | Line:73 | Processing File: 7301c35-India-ID1.png
+2026-05-29 10:49:37,646 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:49:37,646 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:49:37,693 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:49:39,454 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:49:39,454 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:49:39,454 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:49:39,456 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 10:49:39,456 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 10:49:39,456 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:49:39,458 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:49:39,458 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:49:39,459 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:49:39,913 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:49:39,917 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 10:49:39,922 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 3
+2026-05-29 10:49:39,923 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 3 entities
+2026-05-29 10:49:39,923 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:49:39,923 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:49:39,924 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 10:49:39,924 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 10:49:39,924 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 10:49:40,040 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 10:49:40,040 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 10:55:53,232 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 10:59:10,813 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 10:59:34,539 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 10:59:34,547 | INFO | logger.py | log_info | Line:73 | Processing File: 7301c35-India-ID1.png
+2026-05-29 10:59:34,566 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 10:59:34,567 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 10:59:34,607 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 10:59:36,197 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 10:59:36,197 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 10:59:36,197 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 10:59:36,198 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 10:59:36,198 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 10:59:36,198 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 10:59:36,200 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 10:59:36,200 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 10:59:36,200 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 10:59:36,552 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 10:59:36,556 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 10:59:36,560 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 3
+2026-05-29 10:59:36,560 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 3 entities
+2026-05-29 10:59:36,560 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:59:36,560 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 10:59:36,561 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 10:59:36,561 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 10:59:36,561 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 10:59:36,626 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 10:59:36,627 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:03:44,535 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 11:03:58,242 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 11:04:25,871 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:04:25,880 | INFO | logger.py | log_info | Line:73 | Processing File: one-sided-office-id-card.jpg
+2026-05-29 11:04:25,891 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:04:25,892 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:04:25,930 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:04:27,604 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:04:27,604 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:04:27,604 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:04:27,605 | WARNING | logger.py | log_warning | Line:78 | Low confidence classification
+2026-05-29 11:04:27,605 | INFO | logger.py | log_info | Line:73 | Detected document type: Unknown
+2026-05-29 11:04:27,605 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:04:27,608 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:04:27,608 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:04:27,608 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 11:04:27,990 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 11:04:27,996 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 11:04:27,999 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 0
+2026-05-29 11:04:27,999 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 0 entities
+2026-05-29 11:04:27,999 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:04:27,999 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:04:27,999 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 0 entities
+2026-05-29 11:04:28,000 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 0
+2026-05-29 11:04:28,000 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:04:28,067 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:04:28,069 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:04:55,449 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:04:55,450 | INFO | logger.py | log_info | Line:73 | Processing File: 360_F_406033645_AcLheutjL6TN3LcR0kIEeL5XyJCLcgEc.jpg
+2026-05-29 11:04:55,453 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:04:55,453 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:04:55,478 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:04:56,949 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:04:56,949 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:04:56,949 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:04:56,950 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:04:56,951 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:04:56,951 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:04:56,951 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:04:56,952 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:04:56,954 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:04:56,959 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 4
+2026-05-29 11:04:56,959 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 4 entities
+2026-05-29 11:04:56,960 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:04:56,960 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:04:56,960 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 4 entities
+2026-05-29 11:04:56,960 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 4
+2026-05-29 11:04:56,961 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:04:57,034 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:04:57,035 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:08:36,316 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 11:08:43,848 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 11:08:43,853 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:08:43,854 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:08:43,860 | INFO | logger.py | log_info | Line:73 | Processing File: 360_F_406033645_AcLheutjL6TN3LcR0kIEeL5XyJCLcgEc.jpg
+2026-05-29 11:08:43,867 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:08:43,868 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:08:43,885 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:08:45,085 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:08:45,085 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:08:45,086 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:08:45,086 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:08:45,087 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:08:45,087 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:08:45,088 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:08:45,088 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:08:45,089 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 11:08:45,333 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 11:08:45,351 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:08:45,355 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 4
+2026-05-29 11:08:45,355 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 4 entities
+2026-05-29 11:08:45,356 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:08:45,356 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:08:45,356 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 4 entities
+2026-05-29 11:08:45,356 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 4
+2026-05-29 11:08:45,357 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:08:45,435 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:08:45,438 | INFO | logger.py | log_info | Line:73 | Processing File: 360_F_406033645_AcLheutjL6TN3LcR0kIEeL5XyJCLcgEc.jpg
+2026-05-29 11:08:45,440 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:08:45,440 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:08:45,457 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:08:46,183 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:08:46,183 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:08:46,183 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:08:46,184 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:08:46,185 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:08:46,185 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:08:46,186 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:08:46,186 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:08:46,197 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:08:46,198 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 4
+2026-05-29 11:08:46,198 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 4 entities
+2026-05-29 11:08:46,199 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:08:46,199 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:08:46,199 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 4 entities
+2026-05-29 11:08:46,199 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 4
+2026-05-29 11:08:46,200 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:08:46,278 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:08:46,279 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:08:46,281 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:09:11,791 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:09:11,794 | INFO | logger.py | log_info | Line:73 | Processing File: scan0001.jpg
+2026-05-29 11:09:11,801 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:09:11,802 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:09:11,848 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:09:13,552 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:09:13,553 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:09:13,553 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:09:13,554 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:09:13,554 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:09:13,555 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:09:13,556 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:09:13,557 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:09:13,568 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-05-29 11:09:13,568 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 3
+2026-05-29 11:09:13,569 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 3 entities
+2026-05-29 11:09:13,569 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:09:13,570 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:09:13,570 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 11:09:13,570 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 11:09:13,571 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:09:13,661 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:09:13,662 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:14:15,868 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 11:14:24,133 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 11:14:34,613 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 11:14:42,988 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 11:15:32,030 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:15:32,039 | INFO | logger.py | log_info | Line:73 | Processing File: real_ID_card-0f84231e66784fffb6412c4e78592a7f.png
+2026-05-29 11:15:32,060 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:15:32,061 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:15:32,121 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:15:34,074 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:15:34,074 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:15:34,075 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:15:34,076 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:15:34,076 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:15:34,076 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:15:34,078 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:15:34,078 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:15:34,078 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 11:15:34,446 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 11:15:34,451 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:15:34,458 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 4
+2026-05-29 11:15:34,459 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 4 entities
+2026-05-29 11:15:34,459 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:15:34,459 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:15:34,460 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 4 entities
+2026-05-29 11:15:34,460 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 4
+2026-05-29 11:15:34,461 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:15:34,538 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:15:34,540 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:15:53,528 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:15:53,531 | INFO | logger.py | log_info | Line:73 | Processing File: 7301c35-India-ID1.png
+2026-05-29 11:15:53,548 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:15:53,548 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:15:53,591 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:15:55,123 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:15:55,123 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:15:55,123 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:15:55,124 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:15:55,124 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:15:55,124 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:15:55,125 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:15:55,125 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:15:55,135 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:15:55,135 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 3
+2026-05-29 11:15:55,136 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 3 entities
+2026-05-29 11:15:55,136 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:15:55,136 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:15:55,137 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 11:15:55,137 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 11:15:55,137 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:15:55,307 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:15:55,307 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:16:34,657 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:16:34,667 | INFO | logger.py | log_info | Line:73 | Processing File: Aadhaar_Card.png
+2026-05-29 11:16:34,743 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:16:34,743 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:16:35,032 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:16:37,906 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:16:37,906 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:16:37,907 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:16:37,908 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:16:37,908 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:16:37,908 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:16:37,909 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:16:37,909 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:16:37,930 | INFO | logger.py | log_info | Line:73 | spaCy extracted 3 entities
+2026-05-29 11:16:37,931 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 5
+2026-05-29 11:16:37,932 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 5 entities
+2026-05-29 11:16:37,932 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:16:37,932 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:16:37,933 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 5 entities
+2026-05-29 11:16:37,933 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 5
+2026-05-29 11:16:37,933 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:16:38,003 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:16:38,005 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:34:51,565 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:34:51,568 | INFO | logger.py | log_info | Line:73 | Processing File: India-Hotel-Bill-Layout-Template-edit-online.png
+2026-05-29 11:34:51,598 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:34:51,599 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:34:51,835 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:34:56,135 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:34:56,135 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:34:56,135 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:34:56,136 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 11:34:56,137 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 11:34:56,138 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:34:56,142 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:34:56,143 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:34:56,159 | INFO | logger.py | log_info | Line:73 | spaCy extracted 4 entities
+2026-05-29 11:34:56,160 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 4
+2026-05-29 11:34:56,161 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 4 entities
+2026-05-29 11:34:56,161 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:34:56,161 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:34:56,162 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 16 entities
+2026-05-29 11:34:56,162 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 16
+2026-05-29 11:34:56,163 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:34:56,258 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:34:56,264 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:39:16,193 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:39:16,196 | INFO | logger.py | log_info | Line:73 | Processing File: Bio-Data-Format-768x1086.jpg
+2026-05-29 11:39:16,208 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:39:16,208 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:39:16,310 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:39:22,060 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:39:22,060 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:39:22,060 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:39:22,061 | INFO | logger.py | log_info | Line:73 | Text classified as Resume
+2026-05-29 11:39:22,061 | INFO | logger.py | log_info | Line:73 | Detected document type: Resume
+2026-05-29 11:39:22,061 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:39:22,064 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:39:22,064 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:39:22,083 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 11:39:22,084 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 1
+2026-05-29 11:39:22,085 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 1 entities
+2026-05-29 11:39:22,085 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:39:22,085 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:39:22,086 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 11:39:22,087 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 11:39:22,087 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:39:22,166 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:39:22,172 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:40:31,321 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:40:31,323 | INFO | logger.py | log_info | Line:73 | Processing File: 5de675c806a055f1219aed28600f3a62.jpg
+2026-05-29 11:40:31,334 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:40:31,335 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:40:31,403 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:40:39,366 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:40:39,366 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:40:39,366 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:40:39,367 | INFO | logger.py | log_info | Line:73 | Text classified as Resume
+2026-05-29 11:40:39,368 | INFO | logger.py | log_info | Line:73 | Detected document type: Resume
+2026-05-29 11:40:39,369 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:40:39,376 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:40:39,376 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:40:39,415 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-05-29 11:40:39,416 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 3
+2026-05-29 11:40:39,416 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 3 entities
+2026-05-29 11:40:39,416 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:40:39,417 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:40:39,418 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 4 entities
+2026-05-29 11:40:39,418 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 4
+2026-05-29 11:40:39,418 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:40:39,506 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:40:39,515 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:41:35,348 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:41:35,350 | INFO | logger.py | log_info | Line:73 | Processing File: outstanding_11.png
+2026-05-29 11:41:35,357 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:41:35,357 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:41:35,468 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:41:40,723 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:41:40,723 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:41:40,723 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:41:40,725 | INFO | logger.py | log_info | Line:73 | Text classified as Resume
+2026-05-29 11:41:40,725 | INFO | logger.py | log_info | Line:73 | Detected document type: Resume
+2026-05-29 11:41:40,725 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:41:40,731 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:41:40,731 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:41:40,756 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-05-29 11:41:40,757 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-05-29 11:41:40,757 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-05-29 11:41:40,757 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:41:40,757 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:41:40,758 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 11:41:40,758 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 11:41:40,758 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:41:40,837 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:41:40,842 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:42:36,913 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:42:36,916 | INFO | logger.py | log_info | Line:73 | Processing File: outstanding_9.png
+2026-05-29 11:42:36,920 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:42:36,920 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:42:37,017 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:42:42,266 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:42:42,266 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:42:42,266 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:42:42,268 | INFO | logger.py | log_info | Line:73 | Text classified as Resume
+2026-05-29 11:42:42,268 | INFO | logger.py | log_info | Line:73 | Detected document type: Resume
+2026-05-29 11:42:42,268 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:42:42,272 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:42:42,272 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:42:42,291 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:42:42,294 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-05-29 11:42:42,294 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-05-29 11:42:42,294 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:42:42,295 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:42:42,296 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 4 entities
+2026-05-29 11:42:42,296 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 4
+2026-05-29 11:42:42,296 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:42:42,376 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:42:42,383 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:47:30,314 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:47:30,316 | INFO | logger.py | log_info | Line:73 | Processing File: 9e86cd5d89044d3f10d820241ce2a0f9.jpg
+2026-05-29 11:47:30,350 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:47:30,351 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:47:30,418 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:47:32,257 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:47:32,257 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:47:32,257 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:47:32,259 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:47:32,259 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:47:32,259 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:47:32,260 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:47:32,260 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:47:32,275 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 11:47:32,276 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 0
+2026-05-29 11:47:32,276 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 0 entities
+2026-05-29 11:47:32,276 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:47:32,278 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:47:32,278 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 0 entities
+2026-05-29 11:47:32,278 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 0
+2026-05-29 11:47:32,278 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:47:32,354 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:47:32,357 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:48:35,342 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:48:35,345 | INFO | logger.py | log_info | Line:73 | Processing File: e6d61216480c6b6f56ec8cec4bb2fc5e.jpg
+2026-05-29 11:48:35,350 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:48:35,350 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:48:35,386 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:48:37,469 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:48:37,469 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:48:37,469 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:48:37,470 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:48:37,470 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:48:37,471 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:48:37,471 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:48:37,472 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:48:37,477 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-05-29 11:48:37,488 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-05-29 11:48:37,489 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-05-29 11:48:37,489 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:48:37,489 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:48:37,490 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 2 entities
+2026-05-29 11:48:37,490 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 2
+2026-05-29 11:48:37,490 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:48:37,570 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:48:37,571 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:48:58,203 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:48:58,204 | INFO | logger.py | log_info | Line:73 | Processing File: 617-6174957_primary-school-id-card-sample-sample-for-school.png
+2026-05-29 11:48:58,207 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:48:58,209 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:48:58,265 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:48:59,884 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:48:59,884 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:48:59,884 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:48:59,886 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:48:59,886 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:48:59,886 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:48:59,887 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:48:59,887 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:48:59,895 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:48:59,896 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-05-29 11:48:59,896 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-05-29 11:48:59,897 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:48:59,897 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:48:59,897 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 2 entities
+2026-05-29 11:48:59,898 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 2
+2026-05-29 11:48:59,898 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:48:59,977 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:48:59,979 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:49:35,274 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:49:35,276 | INFO | logger.py | log_info | Line:73 | Processing File: 42-428800_student-id-card-design-hd-png-download.png
+2026-05-29 11:49:35,283 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:49:35,284 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:49:35,348 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:49:37,252 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:49:37,252 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:49:37,252 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:49:37,254 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:49:37,255 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:49:37,255 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:49:37,256 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:49:37,256 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:49:37,268 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-05-29 11:49:37,268 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 1
+2026-05-29 11:49:37,270 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 1 entities
+2026-05-29 11:49:37,270 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:49:37,270 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:49:37,271 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 1 entities
+2026-05-29 11:49:37,271 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 1
+2026-05-29 11:49:37,271 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:49:37,350 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:49:37,352 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:50:27,766 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:50:27,769 | INFO | logger.py | log_info | Line:73 | Processing File: 1d10991a6900920818b08222dbb7b4cb.jpg
+2026-05-29 11:50:27,770 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:50:27,770 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:50:27,779 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:50:29,178 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:50:29,178 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:50:29,179 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:50:29,180 | WARNING | logger.py | log_warning | Line:78 | Low confidence classification
+2026-05-29 11:50:29,180 | INFO | logger.py | log_info | Line:73 | Detected document type: Unknown
+2026-05-29 11:50:29,180 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:50:29,181 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:50:29,182 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:50:29,197 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 11:50:29,197 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 0
+2026-05-29 11:50:29,198 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 0 entities
+2026-05-29 11:50:29,198 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:50:29,198 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:50:29,198 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 1 entities
+2026-05-29 11:50:29,198 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 1
+2026-05-29 11:50:29,199 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:50:29,280 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:50:29,282 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:51:51,231 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:51:51,235 | INFO | logger.py | log_info | Line:73 | Processing File: iD-NOV2022.jpg
+2026-05-29 11:51:51,247 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:51:51,248 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:51:51,334 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:51:53,408 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:51:53,408 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:51:53,408 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:51:53,409 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:51:53,409 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:51:53,410 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:51:53,410 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:51:53,411 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:51:53,422 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-05-29 11:51:53,423 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 3
+2026-05-29 11:51:53,424 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 3 entities
+2026-05-29 11:51:53,424 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:51:53,424 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:51:53,425 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-05-29 11:51:53,425 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-05-29 11:51:53,425 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:51:53,501 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:51:53,503 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:53:22,192 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:53:22,194 | INFO | logger.py | log_info | Line:73 | Processing File: govt-id-card-design.jpg
+2026-05-29 11:53:22,200 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:53:22,200 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:53:22,225 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:53:24,306 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:53:24,306 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:53:24,306 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:53:24,307 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 11:53:24,307 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 11:53:24,308 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:53:24,308 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:53:24,308 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:53:24,319 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-05-29 11:53:24,320 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-05-29 11:53:24,321 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-05-29 11:53:24,322 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:53:24,322 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:53:24,322 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 2 entities
+2026-05-29 11:53:24,322 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 2
+2026-05-29 11:53:24,323 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:53:24,433 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:53:24,434 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 11:55:45,962 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 11:55:45,965 | INFO | logger.py | log_info | Line:73 | Processing File: identity-card-639.jpg
+2026-05-29 11:55:45,968 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 11:55:45,968 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 11:55:45,988 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 11:55:47,204 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 11:55:47,204 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 11:55:47,205 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 11:55:47,206 | WARNING | logger.py | log_warning | Line:78 | Low confidence classification
+2026-05-29 11:55:47,206 | INFO | logger.py | log_info | Line:73 | Detected document type: Unknown
+2026-05-29 11:55:47,206 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 11:55:47,207 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 11:55:47,207 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 11:55:47,217 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 11:55:47,218 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 0
+2026-05-29 11:55:47,219 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 0 entities
+2026-05-29 11:55:47,219 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:55:47,219 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 11:55:47,219 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 2 entities
+2026-05-29 11:55:47,219 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 2
+2026-05-29 11:55:47,220 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 11:55:47,332 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 11:55:47,333 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 12:16:02,456 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 14:44:02,851 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 14:45:50,724 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 14:45:50,735 | INFO | logger.py | log_info | Line:73 | Processing File: i_Simple-Ecommerce-Invoice_full.jpg
+2026-05-29 14:45:50,763 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 14:45:50,764 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 14:45:50,901 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 14:45:55,897 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 14:45:55,897 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 14:45:55,897 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 14:45:55,898 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 14:45:55,899 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 14:45:55,899 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 14:45:55,906 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 14:45:55,907 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 14:45:55,908 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone Project\Intelligent Document Processing System\models\spaCy
+2026-05-29 14:45:56,395 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 14:45:56,409 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 14:45:56,414 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 11
+2026-05-29 14:45:56,415 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 11 entities
+2026-05-29 14:45:56,415 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:45:56,415 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:45:56,417 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 16 entities
+2026-05-29 14:45:56,417 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 16
+2026-05-29 14:45:56,418 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 14:45:56,505 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 14:45:56,511 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 14:52:47,628 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 14:52:47,632 | INFO | logger.py | log_info | Line:73 | Processing File: Screenshot (400).png
+2026-05-29 14:52:47,644 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 14:52:47,646 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 14:52:47,683 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 14:52:49,353 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 14:52:49,365 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 14:52:49,366 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 14:52:49,366 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 14:52:49,367 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 14:52:49,367 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 14:52:49,368 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 14:52:49,368 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 14:52:49,375 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 14:52:49,379 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 1
+2026-05-29 14:52:49,379 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 1 entities
+2026-05-29 14:52:49,379 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:52:49,379 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:52:49,380 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 1 entities
+2026-05-29 14:52:49,380 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 1
+2026-05-29 14:52:49,381 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 14:52:49,465 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 14:52:49,466 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 14:53:24,526 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 14:53:24,532 | INFO | logger.py | log_info | Line:73 | Processing File: Screenshot (400).png
+2026-05-29 14:53:24,544 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 14:53:24,544 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 14:53:24,587 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 14:53:25,715 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 14:53:25,715 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 14:53:25,716 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 14:53:25,717 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 14:53:25,717 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 14:53:25,717 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 14:53:25,718 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 14:53:25,718 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 14:53:25,728 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 14:53:25,728 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 1
+2026-05-29 14:53:25,729 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 1 entities
+2026-05-29 14:53:25,729 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:53:25,729 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:53:25,729 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 1 entities
+2026-05-29 14:53:25,730 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 1
+2026-05-29 14:53:25,730 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 14:53:25,811 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 14:53:25,813 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 14:53:26,032 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 14:53:26,034 | INFO | logger.py | log_info | Line:73 | Processing File: Screenshot (399).png
+2026-05-29 14:53:26,048 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 14:53:26,048 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 14:53:26,113 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 14:53:27,605 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 14:53:27,605 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 14:53:27,605 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 14:53:27,607 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 14:53:27,607 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 14:53:27,607 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 14:53:27,608 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 14:53:27,608 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 14:53:27,610 | INFO | logger.py | log_info | Line:73 | spaCy extracted 3 entities
+2026-05-29 14:53:27,617 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 5
+2026-05-29 14:53:27,618 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 5 entities
+2026-05-29 14:53:27,618 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:53:27,618 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:53:27,618 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 5 entities
+2026-05-29 14:53:27,619 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 5
+2026-05-29 14:53:27,619 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 14:53:27,729 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 14:53:27,731 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 14:53:44,899 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 14:53:44,904 | INFO | logger.py | log_info | Line:73 | Processing File: Screenshot (400).png
+2026-05-29 14:53:44,917 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 14:53:44,918 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 14:53:44,959 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 14:53:46,126 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 14:53:46,126 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 14:53:46,127 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 14:53:46,128 | INFO | logger.py | log_info | Line:73 | Text classified as ID Card
+2026-05-29 14:53:46,128 | INFO | logger.py | log_info | Line:73 | Detected document type: ID Card
+2026-05-29 14:53:46,128 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 14:53:46,129 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 14:53:46,129 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 14:53:46,139 | INFO | logger.py | log_info | Line:73 | spaCy extracted 0 entities
+2026-05-29 14:53:46,140 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 1
+2026-05-29 14:53:46,141 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 1 entities
+2026-05-29 14:53:46,141 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:53:46,141 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 14:53:46,142 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 1 entities
+2026-05-29 14:53:46,142 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 1
+2026-05-29 14:53:46,142 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 14:53:46,256 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-05-29 14:53:46,258 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 21:49:20,699 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:52:16,601 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-05-29 21:52:16,618 | INFO | logger.py | log_info | Line:73 | Processing File: Architecture-Payment-Invoice-Template-edit-online-1.jpg
+2026-05-29 21:52:16,651 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-05-29 21:52:16,651 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-05-29 21:52:16,864 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-05-29 21:52:21,145 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-05-29 21:52:21,145 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-05-29 21:52:21,145 | INFO | logger.py | log_info | Line:73 | Starting text classification
+2026-05-29 21:52:21,146 | INFO | logger.py | log_info | Line:73 | Text classified as Invoice
+2026-05-29 21:52:21,146 | INFO | logger.py | log_info | Line:73 | Detected document type: Invoice
+2026-05-29 21:52:21,146 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-05-29 21:52:21,164 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-05-29 21:52:21,164 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-05-29 21:52:21,165 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone_Project\Intelligent_Document_Processing_System\models\spaCy
+2026-05-29 21:52:21,575 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-05-29 21:52:21,599 | INFO | logger.py | log_info | Line:73 | spaCy extracted 6 entities
+2026-05-29 21:52:21,603 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 7
+2026-05-29 21:52:21,604 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 7 entities
+2026-05-29 21:52:21,604 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 21:52:21,604 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-05-29 21:52:21,605 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 15 entities
+2026-05-29 21:52:21,605 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 15
+2026-05-29 21:52:21,606 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-05-29 21:52:21,608 | ERROR | logger.py | log_exception | Line:88 | save_document() missing 1 required positional argument: 's3_url'
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone_Project\Intelligent_Document_Processing_System\backend\api\routes\process_routes.py", line 408, in process_uploaded_document
+    save_document(
+TypeError: save_document() missing 1 required positional argument: 's3_url'
+2026-05-29 21:52:21,614 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-05-29 21:55:47,306 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:56:03,188 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:56:14,556 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:56:23,354 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:56:29,594 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:56:38,799 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 21:56:56,434 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 21:57:04,826 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:03:30,915 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:03:40,425 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:03:41,274 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:03:49,846 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:04:07,122 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:04:15,543 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:04:38,832 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:04:49,705 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:05:00,006 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:05:08,811 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:05:09,369 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:05:18,300 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:20,316 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:06:28,577 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:34,559 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:06:42,979 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:43,408 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:06:51,868 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:06:52,518 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:07:01,646 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:07:10,638 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:07:22,541 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:07:22,543 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:07:37,895 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:10:54,033 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:11:04,063 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-05-29 22:11:18,219 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-05-29 22:11:26,873 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
