@@ -89,6 +89,20 @@ from layout_extraction.layout_parser import (
 
 from PIL import Image
 import numpy as np
+
+from utils.document_parsers.invoice_parser import (
+    parse_invoice
+)
+
+from utils.validators.invoice_validator import (
+    validate_invoice
+)
+from utils.document_parsers.resume_parser import (
+    parse_resume
+)
+from utils.document_parsers.id_card_parser import (
+    parse_id_card
+)
 # =========================================================
 # PROCESS DOCUMENT
 # =========================================================
@@ -395,6 +409,10 @@ def process_document(uploaded_file):
 
         try:
 
+            rows = layout_result.get(
+                "rows",
+                []
+            )
             parsed_invoice_table = parse_invoice_table(
                 rows
             )
@@ -428,10 +446,10 @@ def process_document(uploaded_file):
             {}
         )
 
-        rows = layout_result.get(
-            "rows",
-            []
-        )
+        # rows = layout_result.get(
+        #     "rows",
+        #     []
+        # )
 
         # =================================================
         # DEBUG OUTPUT
@@ -518,10 +536,6 @@ def process_document(uploaded_file):
             f"Final hybrid entities: {len(all_entities)}"
         )
 
-        # =================================================
-        # STRUCTURED OUTPUT
-        # =================================================
-
         structured_output = structure_entities(
 
             document_type,
@@ -529,6 +543,53 @@ def process_document(uploaded_file):
             all_entities
         )
 
+        # ==========================================
+        # INVOICE PARSER
+        # ==========================================
+
+        if "invoice" in str(document_type).lower():
+
+            parsed_invoice = parse_invoice(
+
+                final_ocr_text,
+
+                all_entities,
+
+                table_data,
+
+                layout_fields
+            )
+
+            structured_output[
+                "parsed_invoice"
+            ] = parsed_invoice
+
+            if "resume" in document_type.lower():
+
+                parsed_resume = parse_resume(
+
+                    final_ocr_text,
+
+                    all_entities
+                )
+
+                structured_output[
+                    "parsed_resume"
+                ] = parsed_resume
+
+
+        if "id" in str(document_type).lower():
+
+            parsed_id_card = parse_id_card(
+
+                final_ocr_text,
+
+                all_entities
+            )
+
+            structured_output[
+                "parsed_id_card"
+            ] = parsed_id_card
         # =================================================
         # MERGE LAYOUT OUTPUT
         # =================================================
@@ -552,6 +613,17 @@ def process_document(uploaded_file):
         structured_output[
             "invoice_summary"
         ] = summary_data
+
+        # parsed_invoice = parse_invoice(
+        #     final_ocr_text,
+        #     all_entities,
+        #     table_data,
+        #     layout_fields,
+        #     structured_output.get(
+        #         "invoice_summary",
+        #         {}
+        #     )
+        # )
 
         structured_output[
             "layout_summary"
