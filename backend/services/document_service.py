@@ -8,6 +8,7 @@
 # IMPORTS
 # =========================================================
 
+from email.mime import image
 import traceback
 
 from PIL import Image
@@ -33,6 +34,7 @@ from backend.services.nlp_service import (
 # HYBRID ENTITY ENGINE
 # =========================================================
 
+from documentClassifier.rule_based_classifier import classify_document
 from nlp.hybrid_entityengine import (
     process_hybrid_entities
 )
@@ -41,8 +43,8 @@ from nlp.hybrid_entityengine import (
 # CLASSIFICATION SERVICE
 # =========================================================
 
-from backend.services.classification_service import (
-    classify_document
+from backend.services.deep_classification_service import (
+    classify_document_image
 )
 
 # =========================================================
@@ -356,7 +358,7 @@ def process_document(uploaded_file):
 
         final_ocr_text = "\n".join(
             all_text
-        )
+        )        
 
         # =================================================
         # OCR VALIDATION
@@ -375,10 +377,62 @@ def process_document(uploaded_file):
         log_info(
             "Starting document classification"
         )
+        print("\n========== CLASSIFICATION START ==========")
+        print("Image Type:", type(image))
 
-        document_type = classify_document(
-            final_ocr_text
+        classification_results = classify_document_image(
+            image
         )
+        print("\nCLASSIFICATION_RESULTS")
+        print(classification_results)
+        mobilenet_result = classification_results.get(
+            "mobilenet",
+            {}
+        )
+
+        efficientnet_result = classification_results.get(
+            "efficientnet",
+            {}
+        )
+
+        best_prediction = (
+            efficientnet_result
+            if efficientnet_result["confidence"]
+            >= mobilenet_result["confidence"]
+            else mobilenet_result
+        )
+
+        document_type = best_prediction["label"]
+
+        classification_confidence = (
+            best_prediction["confidence"]
+        )
+
+        # ==========================================
+        # FALLBACK OCR CLASSIFICATION
+        # ==========================================
+
+        if classification_confidence < 70:
+
+            fallback_type = classify_document(
+                final_ocr_text
+            )
+
+            log_info(
+                f"CNN Confidence Low: {classification_confidence}"
+            )
+
+            log_info(
+                f"Fallback Result: {fallback_type}"
+            )
+
+            if fallback_type != "Unknown":
+
+                document_type = fallback_type
+
+                log_info(
+                    f"Using OCR Classification: {document_type}"
+                )
 
         log_info(
             f"Detected document type: {document_type}"
@@ -564,7 +618,7 @@ def process_document(uploaded_file):
                 "parsed_invoice"
             ] = parsed_invoice
 
-            if "resume" in document_type.lower():
+        if "resume" in document_type.lower():
 
                 parsed_resume = parse_resume(
 
@@ -669,6 +723,9 @@ def process_document(uploaded_file):
 
             "document_type": document_type,
 
+            "mobilenet_prediction": mobilenet_result,
+            "efficientnet_prediction": efficientnet_result, 
+
             "classification_confidence":
                 classification_confidence,
 
@@ -717,33 +774,29 @@ def process_document(uploaded_file):
             f"Document Service Error: {str(e)}"
         )
 
-        return {
+        print("\n========== DOCUMENT SERVICE RETURN ==========")
 
-            "success": False,
+        print("\n========== DOCUMENT SERVICE RETURN ==========")
+        print("mobilenet_result =", mobilenet_result)
+        print("efficientnet_result =", efficientnet_result)
+    print(response)
+    return {
+            "success": True,
 
-            "message": str(e),
+            "document_type": document_type,
 
-            "document_type": "Unknown",
+            "mobilenet_prediction": mobilenet_result,
 
-            "classification_confidence": 0,
+            "efficientnet_prediction": efficientnet_result,
 
-            "ocr_text": "",
+            "ocr_text": all_text,
 
-            "entities": [],
+            "entities": all_entities,
 
-            "structured_output": {},
+            "structured_output": structured_output,
 
-            "table_data": [],
+            "boxes": all_boxes,
 
-            "layout_fields": {},
-
-            "layout_type": "unknown",
-
-            "boxes": [],
-
-            "rows": [],
-
-            "pages": 0,
-
-            "ocr_confidence": 0.0
+            "table_data": all_tables
         }
+    
