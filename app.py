@@ -24,6 +24,7 @@ import requests
 
 from PIL import Image
 from storage.s3_storage import upload_file_to_s3
+import plotly.graph_objects as go
 
 # =========================================================
 # DATABASE
@@ -59,6 +60,13 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+if "chat_history" not in st.session_state:
+
+    st.session_state["chat_history"] = []
+
+if "document_id" not in st.session_state:
+
+    st.session_state["document_id"] = None
 
 
 # =========================================================
@@ -457,7 +465,27 @@ img {
     border-radius: 20px !important;
 }
 
+.winner-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,0.25),
+            rgba(168,85,247,0.25)
+        );
+
+        border-radius:24px;
+
+        padding:25px;
+
+        text-align:center;
+
+        border:1px solid rgba(255,255,255,0.1);
+
+        margin-bottom:20px;
+}
 </style>
+            
 """, unsafe_allow_html=True)
 
 # =========================================================
@@ -471,8 +499,10 @@ with st.sidebar:
     menu = st.radio(
         "Navigation",
         [
+            "📊 Dashboard",
             "📤 Upload Documents",
             "📚 Document History",
+            "📈 Analytics",
             "ℹ️ About Project"
         ]
     )
@@ -665,6 +695,15 @@ if menu == "📤 Upload Documents":
                         continue
 
                     result = response.json()
+                    document_id = result.get(
+                        "document_id"
+                    )
+
+                    if document_id:
+
+                        st.session_state[
+                            "document_id"
+                        ] = document_id            
 
                 if not result.get("success", False):
 
@@ -678,6 +717,34 @@ if menu == "📤 Upload Documents":
                 document_type = result.get(
                     "document_type",
                     "Unknown"
+                )
+                mobilenet_prediction = result.get(
+                    "mobilenet_prediction",
+                    {}
+                )
+
+                efficientnet_prediction = result.get(
+                    "efficientnet_prediction",
+                    {}
+                )
+
+                # =====================================================
+                # AI CLASSIFICATION RESULTS
+                # =====================================================
+                # Get predictions safely
+
+                mobile_label = mobilenet_prediction.get("label", "Unknown")
+                mobile_conf = float(
+                    mobilenet_prediction.get("confidence", 0)
+                )
+
+                efficient_label = efficientnet_prediction.get(
+                    "label",
+                    "Unknown"
+                )
+
+                efficient_conf = float(
+                    efficientnet_prediction.get("confidence", 0)
                 )
 
                 ocr_text = result.get("ocr_text", "")
@@ -724,57 +791,47 @@ if menu == "📤 Upload Documents":
                 # =====================================================
 
                 st.markdown(f"""
-                <div class="doc-header">
+                    <div style="
+                    background:linear-gradient(
+                    135deg,
+                    rgba(59,130,246,0.12),
+                    rgba(168,85,247,0.12)
+                    );
+                    padding:25px;
+                    border-radius:24px;
+                    border:1px solid rgba(255,255,255,0.08);
+                    margin-bottom:20px;
+                    ">
 
-                <div class="doc-title">
-                📄 {uploaded_file.name}
-                </div>
+                    <h2 style="margin-bottom:15px;">
+                    📄 {uploaded_file.name}
+                    </h2>
 
-                <div class="doc-type"
-                style="background:{DOC_COLORS.get(document_type, "#64748b")};">
+                    <h1 style="
+                    color:#60a5fa;
+                    margin-bottom:20px;
+                    ">
+                    {document_type}
+                    </h1>
 
-                {document_type}
+                    </div>
+                    """, unsafe_allow_html=True)
 
-                </div>
+                st.markdown("### 🧠 AI Insights")
 
-                </div>
-                """, unsafe_allow_html=True)
+                st.info(
+                    f"""
+                • Document classified as **{document_type}**
 
-                # =====================================================
-                # METRICS
-                # =====================================================
+                • OCR quality is **{ocr_confidence:.2f}%**
 
-                cols = st.columns(5)
+                • Extracted **{len(entities)} entities**
 
-                metrics = [
+                • Detected **{len(table_data)} tables**
 
-                    ("📄 Pages", total_pages),
-                    ("📊 OCR", f"{ocr_confidence}%"),
-                    ("🎯 Entities", len(entities)),
-                    ("📦 Tables", len(table_data)),
-                    ("⚡ Time", f"{processing_time}s")
-                ]
-
-                for col, metric in zip(cols, metrics):
-
-                    with col:
-
-                        st.markdown(f"""
-                        <div class="metric-card">
-
-                        <div class="metric-title">
-                        {metric[0]}
-                        </div>
-
-                        <div class="metric-value">
-                        {metric[1]}
-                        </div>
-
-                        </div>
-                        """, unsafe_allow_html=True)
-
-                st.markdown("<br>", unsafe_allow_html=True)
-
+                • Processing completed in **{processing_time:.2f} seconds**
+                """
+                )
                 # =====================================================
                 # DOCUMENT IMAGE
                 # =====================================================
@@ -840,7 +897,8 @@ if menu == "📤 Upload Documents":
                     "📊 Tables",
                     "🧠 Layout Fields",
                     "✨ Highlighted",
-                    "⬇ Export"
+                    "⬇ Export",
+                    "💬 Chatbot"
                 ])
 
                 # OCR TAB
@@ -984,6 +1042,192 @@ if menu == "📤 Upload Documents":
                             )
                         )
 
+                    # =====================================================
+                    # CHATBOT TAB
+                    # =====================================================
+
+                    # =====================================================
+                    # CHATBOT TAB
+                    # =====================================================
+
+                    with tabs[6]:
+
+                        st.markdown("## 💬 Document Chatbot")
+
+                        st.caption(
+                            "Ask questions about the uploaded document"
+                        )
+
+                        # ==========================================
+                        # CHAT HISTORY INIT
+                        # ==========================================
+
+                        chat_key = f"chat_history_{file_index}"
+
+                        if chat_key not in st.session_state:
+
+                            st.session_state[chat_key] = []
+
+                        # ==========================================
+                        # CLEAR CHAT
+                        # ==========================================
+
+                        col1, col2 = st.columns([4, 1])
+
+                        with col2:
+
+                            if st.button(
+                                "🗑 Clear",
+                                key=f"clear_chat_{file_index}"
+                            ):
+
+                                st.session_state[chat_key] = []
+
+                                st.rerun()
+
+                        # ==========================================
+                        # DISPLAY CHAT HISTORY
+                        # ==========================================
+
+                        if st.session_state[chat_key]:
+
+                            st.markdown("### Chat History")
+
+                        for message in st.session_state[chat_key]:
+
+                            if message["role"] == "user":
+
+                                st.markdown(
+                                    f"""
+                                    <div style="
+                                        background:#1e293b;
+                                        padding:12px;
+                                        border-radius:12px;
+                                        margin-bottom:10px;
+                                        border-left:4px solid #3b82f6;
+                                    ">
+                                    <b>👤 You</b><br><br>
+                                    {message["content"]}
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True
+                                )
+
+                            else:
+
+                                st.markdown(
+                                    f"""
+                                    <div style="
+                                        background:#0f766e;
+                                        padding:12px;
+                                        border-radius:12px;
+                                        margin-bottom:10px;
+                                        border-left:4px solid #14b8a6;
+                                    ">
+                                    <b>🤖 Document AI</b><br><br>
+                                    {message["content"]}
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True
+                                )
+
+                        # ==========================================
+                        # QUESTION INPUT
+                        # ==========================================
+
+                        question = st.text_input(
+                            "Ask a question",
+                            placeholder="Example: What is the invoice amount?",
+                            key=f"chat_question_{file_index}"
+                        )
+
+                        # ==========================================
+                        # ASK BUTTON
+                        # ==========================================
+
+                        if st.button(
+                            "🚀 Ask",
+                            key=f"ask_question_{file_index}"
+                        ):
+
+                            if not question:
+
+                                st.warning(
+                                    "Please enter a question."
+                                )
+
+                            else:
+
+                                document_id = st.session_state.get(
+                                    "document_id"
+                                )
+
+                                if not document_id:
+
+                                    st.error(
+                                        "Document session not found."
+                                    )
+
+                                else:
+
+                                    try:
+
+                                        # Save user message
+
+                                        st.session_state[chat_key].append(
+                                            {
+                                                "role": "user",
+                                                "content": question
+                                            }
+                                        )
+
+                                        with st.spinner(
+                                            "🤖 Thinking..."
+                                        ):
+
+                                            response = requests.post(
+                                                "http://127.0.0.1:8000/chat-document",
+                                                json={
+                                                    "document_id":
+                                                    document_id,
+
+                                                    "question":
+                                                    question
+                                                }
+                                            )
+
+                                        if response.status_code == 200:
+
+                                            answer = (
+                                                response.json()
+                                                .get(
+                                                    "answer",
+                                                    "No answer returned."
+                                                )
+                                            )
+
+                                            st.session_state[chat_key].append(
+                                                {
+                                                    "role": "assistant",
+                                                    "content": answer
+                                                }
+                                            )
+
+                                            st.rerun()
+
+                                        else:
+
+                                            st.error(
+                                                response.text
+                                            )
+
+                                    except Exception as e:
+
+                                        st.error(
+                                            f"Chat Error: {str(e)}"
+                                        )
+
+
                 # =====================================================
                 # SAVE DATABASE
                 # =====================================================
@@ -1100,29 +1344,6 @@ if menu == "📚 Document History":
             )
 
         st.markdown("<br>", unsafe_allow_html=True)
-
-        # =====================================================
-        # CHART
-        # =====================================================
-
-        pie_chart = px.pie(
-            history_df,
-            names="document_type",
-            hole=0.55
-        )
-
-        pie_chart.update_layout(
-            paper_bgcolor='rgba(0,0,0,0)',
-            plot_bgcolor='rgba(0,0,0,0)',
-            font_color='white',
-            height=420
-        )
-
-        st.plotly_chart(
-            pie_chart,
-            use_container_width=True
-        )
-
         # =====================================================
         # SEARCH
         # =====================================================
@@ -1470,3 +1691,419 @@ if menu == "ℹ️ About Project":
 
     </div>
     """, unsafe_allow_html=True)
+
+
+# =========================================================
+# DASHBOARD
+# =========================================================
+
+if menu == "📊 Dashboard":
+
+    st.markdown("""
+        <div class="hero-container">
+
+        <div class="hero-title">
+        🧠 Intelligent Document Processing System
+        </div>
+
+        <div class="hero-subtitle">
+        OCR • NLP • Layout Intelligence • Classification • AWS Cloud
+        </div>
+
+        </div>
+        """, unsafe_allow_html=True)
+    documents = fetch_documents()
+
+    if not documents:
+
+        st.warning("No processed documents found.")
+
+    else:
+
+        history_df = pd.DataFrame(
+            documents,
+            columns=[
+                "id",
+                "document_title",
+                "document_type",
+                "created_at",
+                "structured_output",
+                "s3_url"
+            ]
+        )
+
+        total_docs = len(history_df)
+
+        invoice_count = len(
+            history_df[
+                history_df["document_type"] == "Invoice"
+            ]
+        )
+
+        resume_count = len(
+            history_df[
+                history_df["document_type"] == "Resume"
+            ]
+        )
+
+        id_count = len(
+            history_df[
+                history_df["document_type"] == "ID Card"
+            ]
+        )
+
+        report_count = len(
+            history_df[
+                history_df["document_type"] == "Report"
+            ]
+        )
+
+        st.markdown("## 📊 Executive Overview")
+
+        c1,c2,c3,c4,c5 = st.columns(5)
+
+        c1.metric(
+            "📄 Documents",
+            total_docs
+        )
+
+        c2.metric(
+            "🧾 Invoices",
+            invoice_count
+        )
+
+        c3.metric(
+            "📑 Resumes",
+            resume_count
+        )
+
+        c4.metric(
+            "🪪 ID Cards",
+            id_count
+        )
+
+        c5.metric(
+            "📚 Reports",
+            report_count
+        )
+
+        st.markdown("---")
+
+        st.markdown("## ⚙ System Health")
+
+        h1,h2,h3,h4,h5 = st.columns(5)
+
+        with h1:
+            st.success("✅ FastAPI")
+
+        with h2:
+            st.success("✅ PostgreSQL")
+
+        with h3:
+            st.success("✅ AWS S3")
+
+        with h4:
+            st.success("✅ OCR")
+
+        with h5:
+            st.success("✅ NLP")
+
+        st.markdown("---")
+
+        left,right = st.columns([1,1])
+
+        with left:
+
+            st.markdown("### 📄 Document Distribution")
+
+            fig = px.pie(
+                history_df,
+                names="document_type",
+                hole=0.6
+            )
+
+            fig.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)",
+                font_color="white",
+                height=450
+            )
+
+            st.plotly_chart(
+                fig,
+                use_container_width=True
+            )
+
+        with right:
+
+            st.markdown("### 📊 Document Volume")
+
+            bar_fig = px.bar(
+                history_df["document_type"]
+                .value_counts()
+                .reset_index(),
+                x="document_type",
+                y="count"
+            )
+
+            bar_fig.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)",
+                font_color="white",
+                height=450
+            )
+
+            st.plotly_chart(
+                bar_fig,
+                use_container_width=True
+            )
+
+        st.markdown("---")
+
+        st.markdown("## 📌 Recent Documents")
+
+        latest_docs = history_df.tail(5)
+
+        st.dataframe(
+            latest_docs[
+                [
+                    "document_title",
+                    "document_type",
+                    "created_at"
+                ]
+            ],
+            width="stretch"
+        )
+
+# =========================================================
+# ANALYTICS
+# =========================================================
+
+if menu == "📈 Analytics":
+
+    st.markdown(
+    """
+    <div style="
+        padding:20px 0px 10px 0px;
+    ">
+
+    <h1 style="
+        color:white;
+        margin-bottom:5px;
+        font-size:42px;
+        font-weight:800;
+    ">
+        📈 Analytics Center
+    </h1>
+
+    <p style="
+        color:#94a3b8;
+        font-size:16px;
+        margin-top:0px;
+    ">
+        AI Processing Insights • Document Trends • System Analytics
+    </p>
+
+    </div>
+
+    <hr style="
+        border:1px solid rgba(255,255,255,0.08);
+        margin-top:10px;
+        margin-bottom:20px;
+    ">
+    """,
+    unsafe_allow_html=True
+)
+
+    documents = fetch_documents()
+
+    if not documents:
+
+        st.warning(
+            "No data available."
+        )
+
+    else:
+
+        df = pd.DataFrame(
+            documents,
+            columns=[
+                "id",
+                "document_title",
+                "document_type",
+                "created_at",
+                "structured_output",
+                "s3_url"
+            ]
+        )
+
+        st.markdown("## 📊 Document Analytics")
+
+        c1,c2,c3,c4 = st.columns(4)
+
+        c1.metric(
+            "Documents",
+            len(df)
+        )
+
+        c2.metric(
+            "Types",
+            df["document_type"].nunique()
+        )
+
+        c3.metric(
+            "Latest Upload",
+            str(
+                df.iloc[-1]["created_at"]
+            )[:10]
+        )
+
+        c4.metric(
+            "Storage Records",
+            len(df)
+        )
+
+        st.markdown("---")
+
+        chart1, chart2 = st.columns(2)
+
+        with chart1:
+
+            st.markdown(
+                "### Document Types"
+            )
+
+            pie = px.pie(
+                df,
+                names="document_type",
+                hole=0.55
+            )
+
+            pie.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font_color='white'
+            )
+
+            st.plotly_chart(
+                pie,
+                use_container_width=True
+            )
+
+        with chart2:
+
+            st.markdown(
+                "### Type Frequency"
+            )
+
+            freq = (
+                df["document_type"]
+                .value_counts()
+                .reset_index()
+            )
+
+            freq.columns = [
+                "Document Type",
+                "Count"
+            ]
+
+            bar = px.bar(
+                freq,
+                x="Document Type",
+                y="Count"
+            )
+
+            bar.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font_color='white'
+            )
+
+            st.plotly_chart(
+                bar,
+                use_container_width=True
+            )
+
+        st.markdown("---")
+
+        st.markdown(
+            "## 📅 Upload Timeline"
+        )
+
+        try:
+
+            df["created_at"] = pd.to_datetime(
+                df["created_at"]
+            )
+
+            timeline = (
+                df.groupby(
+                    df["created_at"].dt.date
+                )
+                .size()
+                .reset_index(
+                    name="Documents"
+                )
+            )
+
+            line = px.line(
+                timeline,
+                x="created_at",
+                y="Documents",
+                markers=True
+            )
+
+            line.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font_color='white'
+            )
+
+            st.plotly_chart(
+                line,
+                use_container_width=True
+            )
+
+        except Exception:
+
+            st.info(
+                "Timeline unavailable."
+            )
+
+        st.markdown("---")
+
+        st.markdown(
+            "## 📄 Document Breakdown"
+        )
+
+        breakdown = (
+            df["document_type"]
+            .value_counts()
+            .reset_index()
+        )
+
+        breakdown.columns = [
+            "Document Type",
+            "Count"
+        ]
+
+        st.dataframe(
+            breakdown,
+            width="stretch"
+        )
+
+        st.markdown("---")
+
+        st.markdown(
+            "## ☁ Storage Analytics"
+        )
+
+        s3_count = len(
+            df[
+                df["s3_url"].notnull()
+            ]
+        )
+
+        st.success(
+            f"{s3_count} documents stored in AWS S3"
+        )

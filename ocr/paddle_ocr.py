@@ -3,6 +3,10 @@
 # FULL UPDATED VERSION
 # =========================================================
 
+import os
+
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 from paddleocr import PaddleOCR
 
 import numpy as np

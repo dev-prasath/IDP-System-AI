@@ -55,6 +55,12 @@ from database.postgresql import (
     save_document
 )
 
+import uuid
+
+from backend.chatbot.session_manager import (
+    session_manager
+)
+
 # =========================================================
 # ROUTER
 # =========================================================
@@ -138,6 +144,8 @@ async def process_uploaded_document(
         final_document_type = "Unknown"
 
         structured_output = {}
+        mobilenet_prediction = {}
+        efficientnet_prediction = {}
 
         # =====================================================
         # READ FILE
@@ -209,6 +217,31 @@ async def process_uploaded_document(
                     page_result = process_document(
                         image
                     )
+
+                    print("\n========== PAGE RESULT KEYS ==========")
+                    print(page_result.keys())
+
+                    print("\n========== PAGE RESULT ==========")
+                    print(page_result)
+
+
+                    print("\n========== PAGE RESULT ==========")
+                    print(page_result.keys())
+
+                    mobilenet_prediction = page_result.get(
+                        "mobilenet_prediction",
+                        {}
+                    )
+
+                    efficientnet_prediction = page_result.get(
+                        "efficientnet_prediction",
+                        {}
+                    )
+
+                    print("MOBILENET:", mobilenet_prediction)
+                    print("EFFICIENTNET:", efficientnet_prediction)
+
+                   
 
                     if not page_result.get(
                         "success"
@@ -330,6 +363,19 @@ async def process_uploaded_document(
             result = process_document(
                 image
             )
+            mobilenet_prediction = result.get(
+                "mobilenet_prediction",
+                {}
+            )
+
+            efficientnet_prediction = result.get(
+                "efficientnet_prediction",
+                {}
+            )
+
+            print("\n========== IMAGE RESULT ==========")
+            print("MOBILENET:", mobilenet_prediction)
+            print("EFFICIENTNET:", efficientnet_prediction)
 
             if not result.get("success"):
 
@@ -380,6 +426,29 @@ async def process_uploaded_document(
                 {}
             )
 
+            # =====================================================
+            # CREATE CHATBOT SESSION
+            # =====================================================
+
+            document_id = str(
+                uuid.uuid4()
+            )
+
+            try:
+
+                session_manager.create_session(
+                    document_id,
+                    all_text
+                )
+
+                log_info(
+                    f"Chat Session Created: {document_id}"
+                )
+
+            except Exception as chat_error:
+
+                log_exception(chat_error)
+
         # =====================================================
         # OCR CONFIDENCE
         # =====================================================
@@ -415,7 +484,9 @@ async def process_uploaded_document(
 
                 all_entities,
 
-                structured_output
+                structured_output,
+
+                None
             )
 
             log_info(
@@ -432,30 +503,31 @@ async def process_uploaded_document(
         # FINAL RESPONSE
         # =====================================================
 
+        print("\n========== FINAL VALUES ==========")
+        print(mobilenet_prediction)
+        print(efficientnet_prediction)
         return {
-
             "success": True,
+            "message": "Document processed successfully",
 
-            "message": (
-                "Document processed successfully"
-            ),
+            "document_id": document_id,
+
+            "file_name": file.filename,
 
             "file_name": file.filename,
 
             "document_type": final_document_type,
 
+            "mobilenet_prediction": mobilenet_prediction,
+
+            "efficientnet_prediction": efficientnet_prediction,
+
             "pages": total_pages,
-
             "ocr_confidence": overall_confidence,
-
             "ocr_text": all_text,
-
             "entities": all_entities,
-
             "structured_output": structured_output,
-
             "boxes": all_boxes,
-
             "table_data": all_tables
         }
 
