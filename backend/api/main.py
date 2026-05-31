@@ -105,12 +105,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
 # =========================================================
 # STARTUP EVENT
 # =========================================================
 
 @app.on_event("startup")
 async def startup_event():
+
+    create_table()
 
     log_info(
         "FastAPI Server Started Successfully"
@@ -229,7 +233,8 @@ async def global_exception_handler(
                 "Internal Server Error"
             ),
 
-            "error": str(exc)
+            # "error": str(exc)
+            "error": "Internal Server Error"
         }
     )
 

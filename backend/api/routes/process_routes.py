@@ -152,6 +152,11 @@ async def process_uploaded_document(
         # =====================================================
 
         file_bytes = await file.read()
+        if not file_bytes:
+            raise HTTPException(
+                status_code=400,
+                detail="Empty file uploaded"
+            )
 
         # =====================================================
         # PDF PROCESSING
@@ -218,15 +223,6 @@ async def process_uploaded_document(
                         image
                     )
 
-                    print("\n========== PAGE RESULT KEYS ==========")
-                    print(page_result.keys())
-
-                    print("\n========== PAGE RESULT ==========")
-                    print(page_result)
-
-
-                    print("\n========== PAGE RESULT ==========")
-                    print(page_result.keys())
 
                     mobilenet_prediction = page_result.get(
                         "mobilenet_prediction",
@@ -373,10 +369,6 @@ async def process_uploaded_document(
                 {}
             )
 
-            print("\n========== IMAGE RESULT ==========")
-            print("MOBILENET:", mobilenet_prediction)
-            print("EFFICIENTNET:", efficientnet_prediction)
-
             if not result.get("success"):
 
                 raise HTTPException(
@@ -426,29 +418,6 @@ async def process_uploaded_document(
                 {}
             )
 
-            # =====================================================
-            # CREATE CHATBOT SESSION
-            # =====================================================
-
-            document_id = str(
-                uuid.uuid4()
-            )
-
-            try:
-
-                session_manager.create_session(
-                    document_id,
-                    all_text
-                )
-
-                log_info(
-                    f"Chat Session Created: {document_id}"
-                )
-
-            except Exception as chat_error:
-
-                log_exception(chat_error)
-
         # =====================================================
         # OCR CONFIDENCE
         # =====================================================
@@ -467,6 +436,27 @@ async def process_uploaded_document(
         else:
 
             overall_confidence = 0.0
+        
+        # =====================================================
+        # CREATE CHATBOT SESSION
+        # =====================================================
+
+        document_id = str(uuid.uuid4())
+
+        try:
+
+            session_manager.create_session(
+                document_id,
+                all_text
+            )
+
+            log_info(
+                f"Chat Session Created: {document_id}"
+            )
+
+        except Exception as chat_error:
+
+            log_exception(chat_error)
 
         # =====================================================
         # SAVE DOCUMENT TO DATABASE
@@ -503,16 +493,11 @@ async def process_uploaded_document(
         # FINAL RESPONSE
         # =====================================================
 
-        print("\n========== FINAL VALUES ==========")
-        print(mobilenet_prediction)
-        print(efficientnet_prediction)
         return {
             "success": True,
             "message": "Document processed successfully",
 
             "document_id": document_id,
-
-            "file_name": file.filename,
 
             "file_name": file.filename,
 
