@@ -50,6 +50,15 @@ from utils.export_utils import (
     export_entities_excel
 )
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_BASE_URL = os.getenv(
+    "API_BASE_URL",
+    "http://127.0.0.1:8000"
+)
+
 # =========================================================
 # PAGE CONFIG
 # =========================================================
@@ -684,8 +693,9 @@ if menu == "📤 Upload Documents":
                     }
 
                     response = requests.post(
-                        "http://127.0.0.1:8000/process-document",
-                        files=files
+                        f"{API_BASE_URL}/process-document",
+                        files=files,
+                        timeout=300
                     )
 
                     if response.status_code != 200:
@@ -1186,13 +1196,10 @@ if menu == "📤 Upload Documents":
                                         ):
 
                                             response = requests.post(
-                                                "http://127.0.0.1:8000/chat-document",
+                                                f"{API_BASE_URL}/chat-document",
                                                 json={
-                                                    "document_id":
-                                                    document_id,
-
-                                                    "question":
-                                                    question
+                                                    "document_id": document_id,
+                                                    "question": question
                                                 }
                                             )
 

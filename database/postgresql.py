@@ -11,21 +11,41 @@ import json
 
 from datetime import datetime
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # =========================================================
 # DATABASE CONFIG
 # =========================================================
 
+# DB_CONFIG = {
+
+#     "host": "localhost",
+
+#     "database": "idp_system",
+
+#     "user": "postgres",
+
+#     "password": "280402",
+
+#     "port": "5432"
+# }
+
 DB_CONFIG = {
 
-    "host": "localhost",
+    "host": os.getenv("DB_HOST"),
 
-    "database": "idp_system",
+    "database": os.getenv("DB_NAME"),
 
-    "user": "postgres",
+    "user": os.getenv("DB_USER"),
 
-    "password": "280402",
+    "password": os.getenv("DB_PASSWORD"),
 
-    "port": "5432"
+    "port": os.getenv("DB_PORT", "5432"),
+
+    "sslmode": "require"
 }
 
 # =========================================================
@@ -65,6 +85,8 @@ def create_table():
         entities JSONB,
 
         structured_output JSONB,
+                   
+        s3_url TEXT,
 
         created_at TIMESTAMP
     )
