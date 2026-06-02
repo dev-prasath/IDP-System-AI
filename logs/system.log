@@ -9320,3 +9320,350 @@ requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetErro
 2026-05-30 22:46:27,794 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 6fbf84a1-08e8-48f3-82d2-9051e3134685
 2026-05-30 22:46:27,879 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
 2026-05-30 22:46:27,881 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:04:47,507 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-06-02 17:04:47,513 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
+2026-06-02 17:05:56,830 | INFO | logger.py | log_info | Line:73 | FastAPI Server Started Successfully
+2026-06-02 17:06:28,608 | INFO | logger.py | log_info | Line:73 | GET http://localhost:8000/status
+2026-06-02 17:06:28,611 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:06:28,799 | INFO | logger.py | log_info | Line:73 | GET http://localhost:8000/favicon.ico
+2026-06-02 17:06:28,799 | ERROR | logger.py | log_error | Line:83 | HTTP Exception: Not Found
+2026-06-02 17:06:28,799 | INFO | logger.py | log_info | Line:73 | Response Status: 404
+2026-06-02 17:16:49,833 | ERROR | logger.py | log_exception | Line:88 | Invalid URL 'http:///process-document': No host supplied
+Traceback (most recent call last):
+  File "E:\Data_Science\Guvi_Capstone_Project\Intelligent_Document_Processing_System\app.py", line 695, in <module>
+    response = requests.post(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "c:\users\hp\appdata\local\programs\python\python39\lib\site-packages\requests\models.py", line 444, in prepare_url
+    raise InvalidURL(f"Invalid URL {url!r}: No host supplied")
+requests.exceptions.InvalidURL: Invalid URL 'http:///process-document': No host supplied
+2026-06-02 17:17:35,858 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:17:35,909 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:17:35,921 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:17:35,921 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:17:36,048 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:17:42,060 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:17:42,099 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:17:48,957 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:17:48,958 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:17:48,964 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:17:48,965 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:17:48,966 | INFO | logger.py | log_info | Line:73 | Loading spaCy model from: E:\Data_Science\Guvi_Capstone_Project\Intelligent_Document_Processing_System\models\spaCy
+2026-06-02 17:17:49,337 | INFO | logger.py | log_info | Line:73 | spaCy model loaded successfully
+2026-06-02 17:17:49,374 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:17:49,378 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:17:49,378 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:17:49,379 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:17:49,379 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:17:49,379 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:17:49,379 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:17:49,380 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:17:51,987 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 42238e96-3732-4f2d-8964-f995597626b0
+2026-06-02 17:17:54,861 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:17:54,864 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:18:33,879 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:18:33,882 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:18:33,884 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:18:33,886 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:18:33,950 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:18:38,791 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:18:38,791 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:18:39,138 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:18:39,138 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:18:39,141 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:18:39,141 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:18:39,160 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:18:39,164 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:18:39,165 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:18:39,166 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:18:39,166 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:18:39,167 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:18:39,167 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:18:39,167 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:18:39,358 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 6baa8eeb-d028-4e53-bdcf-e9bfb3ca048f
+2026-06-02 17:18:42,470 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:18:42,474 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:18:42,476 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:18:42,476 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:18:42,487 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:18:42,488 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:18:42,556 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:18:46,976 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:18:46,977 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:18:47,316 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:18:47,316 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:18:47,319 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:18:47,319 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:18:47,322 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:18:47,337 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:18:47,338 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:18:47,339 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:18:47,339 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:18:47,340 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:18:47,340 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:18:47,340 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:18:47,505 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 1ea9d7e4-f7d6-4d5c-82ef-8f76655efbae
+2026-06-02 17:18:50,568 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:18:50,572 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:18:50,674 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/chat-document
+2026-06-02 17:18:53,892 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:18:54,744 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:18:54,747 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:18:54,750 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:18:54,752 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:18:54,821 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:18:59,190 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:18:59,190 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:18:59,537 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:18:59,538 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:18:59,540 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:18:59,541 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:18:59,552 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:18:59,562 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:18:59,562 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:18:59,563 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:18:59,563 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:18:59,564 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:18:59,564 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:18:59,564 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:18:59,751 | INFO | logger.py | log_info | Line:73 | Chat Session Created: d8dd92e0-238c-4e4c-b40c-450672f3b575
+2026-06-02 17:19:03,163 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:19:03,166 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:19:23,144 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:19:23,146 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:19:23,151 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:19:23,151 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:19:23,214 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:19:27,670 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:19:27,671 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:19:28,036 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:19:28,037 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:19:28,039 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:19:28,040 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:19:28,060 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:19:28,061 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:19:28,062 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:19:28,062 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:19:28,063 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:19:28,063 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:19:28,064 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:19:28,064 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:19:28,242 | INFO | logger.py | log_info | Line:73 | Chat Session Created: ae7c34ef-86b3-4725-8325-b382d5492b5c
+2026-06-02 17:19:31,114 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:19:31,117 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:19:31,120 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:19:31,122 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:19:31,130 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:19:31,130 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:19:31,191 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:19:35,595 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:19:35,596 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:19:35,930 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:19:35,930 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:19:35,933 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:19:35,933 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:19:35,954 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:19:35,976 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:19:35,977 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:19:35,978 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:19:35,978 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:19:35,979 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:19:35,979 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:19:35,979 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:19:36,161 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 0c76d122-4203-46dd-a76d-d8de2313f5ac
+2026-06-02 17:19:39,309 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:19:39,312 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:19:39,374 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/chat-document
+2026-06-02 17:19:44,140 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:19:47,200 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:19:47,203 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:19:47,207 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:19:47,207 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:19:47,269 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:19:51,401 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:19:51,402 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:19:51,747 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:19:51,748 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:19:51,752 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:19:51,752 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:19:51,766 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:19:51,773 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:19:51,774 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:19:51,774 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:19:51,774 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:19:51,775 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:19:51,775 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:19:51,776 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:19:51,965 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 9f39e9df-b8ad-4f0b-821e-dd562a065eb4
+2026-06-02 17:19:54,872 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:19:54,876 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:20:04,795 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:20:04,800 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:20:04,804 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:20:04,804 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:20:04,867 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:20:09,052 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:20:09,052 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:20:09,384 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:20:09,385 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:20:09,387 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:20:09,388 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:20:09,410 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:20:09,411 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:20:09,412 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:20:09,412 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:09,412 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:09,413 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:20:09,413 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:20:09,413 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:20:09,609 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 1fc61e91-303e-4ed1-91c1-59bb30027482
+2026-06-02 17:20:12,690 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:20:12,693 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:20:12,758 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/chat-document
+2026-06-02 17:20:17,694 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:20:18,751 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:20:18,754 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:20:18,759 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:20:18,759 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:20:18,832 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:20:22,999 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:20:22,999 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:20:23,335 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:20:23,336 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:20:23,338 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:20:23,339 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:20:23,357 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:20:23,361 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:20:23,362 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:20:23,362 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:23,362 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:23,363 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:20:23,363 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:20:23,364 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:20:23,554 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 030c9323-65d0-46ad-8209-f4ca047c34c4
+2026-06-02 17:20:26,715 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:20:26,720 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:20:27,550 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:20:27,554 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:20:27,558 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:20:27,560 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:20:27,640 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:20:31,668 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:20:31,668 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:20:32,000 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:20:32,001 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:20:32,004 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:20:32,004 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:20:32,021 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:20:32,026 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:20:32,027 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:20:32,028 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:32,028 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:32,029 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:20:32,029 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:20:32,029 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:20:32,204 | INFO | logger.py | log_info | Line:73 | Chat Session Created: b40ef4e8-7fce-414b-8dd7-8dc9278a032a
+2026-06-02 17:20:35,354 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:20:35,357 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:20:38,475 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:20:38,479 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:20:38,483 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:20:38,483 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:20:38,556 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:20:43,132 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:20:43,133 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:20:43,527 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:20:43,528 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:20:43,531 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:20:43,531 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:20:43,557 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:20:43,558 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:20:43,559 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:20:43,559 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:43,560 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:43,560 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:20:43,560 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:20:43,561 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:20:43,782 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 3f87aa83-df8b-4607-8c82-646aa73ca33f
+2026-06-02 17:20:46,637 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:20:46,641 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:20:46,705 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/chat-document
+2026-06-02 17:20:49,250 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:20:50,466 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:20:50,469 | INFO | logger.py | log_info | Line:73 | Processing File: Slide2.jpg
+2026-06-02 17:20:50,472 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:20:50,472 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:20:50,536 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:20:55,106 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:20:55,106 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:20:55,569 | INFO | logger.py | log_info | Line:73 | Detected document type: presentation
+2026-06-02 17:20:55,570 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:20:55,575 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:20:55,575 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:20:55,596 | INFO | logger.py | log_info | Line:73 | spaCy extracted 2 entities
+2026-06-02 17:20:55,599 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 2
+2026-06-02 17:20:55,600 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 2 entities
+2026-06-02 17:20:55,600 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:55,601 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:20:55,602 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 3 entities
+2026-06-02 17:20:55,602 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 3
+2026-06-02 17:20:55,602 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:20:55,832 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 0bf90c7f-c039-4931-9242-c552edb689ec
+2026-06-02 17:20:58,910 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:20:58,912 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:30:35,667 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:30:35,694 | INFO | logger.py | log_info | Line:73 | Processing File: ChatGPT Image May 30, 2026, 11_24_29 PM.png
+2026-06-02 17:30:35,764 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:30:35,765 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:30:35,981 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:30:43,314 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:30:43,314 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:30:43,807 | INFO | logger.py | log_info | Line:73 | CNN Confidence Low: 35.58
+2026-06-02 17:30:43,807 | INFO | logger.py | log_info | Line:73 | Fallback Result: Unknown Document
+2026-06-02 17:30:43,808 | INFO | logger.py | log_info | Line:73 | Using OCR Classification: Unknown Document
+2026-06-02 17:30:43,808 | INFO | logger.py | log_info | Line:73 | Detected document type: Unknown Document
+2026-06-02 17:30:43,808 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:30:43,817 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:30:43,818 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:30:43,853 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-06-02 17:30:43,855 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 0
+2026-06-02 17:30:43,856 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 0 entities
+2026-06-02 17:30:43,856 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:30:43,856 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:30:43,858 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 13 entities
+2026-06-02 17:30:43,858 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 13
+2026-06-02 17:30:43,858 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:30:44,203 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 5ca31612-304c-4ed4-adcd-0f1aed72a91f
+2026-06-02 17:31:20,655 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:31:20,658 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 17:33:01,798 | INFO | logger.py | log_info | Line:73 | POST http://127.0.0.1:8000/process-document
+2026-06-02 17:33:01,799 | INFO | logger.py | log_info | Line:73 | Processing File: 360_F_406033645_AcLheutjL6TN3LcR0kIEeL5XyJCLcgEc.jpg
+2026-06-02 17:33:01,801 | INFO | logger.py | log_info | Line:73 | Starting document processing
+2026-06-02 17:33:01,801 | INFO | logger.py | log_info | Line:73 | Processing image document
+2026-06-02 17:33:01,816 | INFO | logger.py | log_info | Line:73 | Starting OCR extraction
+2026-06-02 17:33:02,904 | INFO | logger.py | log_info | Line:73 | OCR extraction completed
+2026-06-02 17:33:02,904 | INFO | logger.py | log_info | Line:73 | Starting document classification
+2026-06-02 17:33:03,109 | INFO | logger.py | log_info | Line:73 | Detected document type: handwritten
+2026-06-02 17:33:03,110 | INFO | logger.py | log_info | Line:73 | Starting layout intelligence engine
+2026-06-02 17:33:03,111 | INFO | logger.py | log_info | Line:73 | Starting NLP pipeline
+2026-06-02 17:33:03,111 | INFO | logger.py | log_info | Line:73 | Starting NLP entity extraction
+2026-06-02 17:33:03,115 | INFO | logger.py | log_info | Line:73 | spaCy extracted 1 entities
+2026-06-02 17:33:03,119 | INFO | logger.py | log_info | Line:73 | Total entities extracted: 4
+2026-06-02 17:33:03,119 | INFO | logger.py | log_info | Line:73 | NLP extraction completed with 4 entities
+2026-06-02 17:33:03,120 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:33:03,120 | INFO | logger.py | log_info | Line:73 | Starting hybrid entity fusion
+2026-06-02 17:33:03,120 | INFO | logger.py | log_info | Line:73 | Hybrid fusion completed with 5 entities
+2026-06-02 17:33:03,120 | INFO | logger.py | log_info | Line:73 | Final hybrid entities: 5
+2026-06-02 17:33:03,120 | INFO | logger.py | log_info | Line:73 | Document processing completed
+2026-06-02 17:33:03,164 | INFO | logger.py | log_info | Line:73 | Chat Session Created: 31a8918e-3579-4f0d-97fd-a8c8d5f27ecd
+2026-06-02 17:33:05,764 | INFO | logger.py | log_info | Line:73 | Document Saved Successfully
+2026-06-02 17:33:05,765 | INFO | logger.py | log_info | Line:73 | Response Status: 200
+2026-06-02 18:46:44,505 | INFO | logger.py | log_info | Line:73 | FastAPI Server Shutdown
