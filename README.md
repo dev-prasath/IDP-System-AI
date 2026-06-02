@@ -15,6 +15,10 @@ using Deep Learning, OCR, and Named Entity Recognition (NER).
 
 ---
 
+Live Demo Link: https://idp-system-ai-b45sashbktdhksuqoaexpt.streamlit.app/
+
+---
+
 # 🚀 Features
 
 ## ✅ OCR Text Extraction
