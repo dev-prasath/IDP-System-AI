@@ -891,7 +891,7 @@ if menu == "📤 Upload Documents":
 
                     st.image(
                         Image.fromarray(visual),
-                        use_container_width=true
+                        use_container_width=True
                     )
 
                 # =====================================================
@@ -942,7 +942,7 @@ if menu == "📤 Upload Documents":
 
                         st.dataframe(
                             entity_df,
-                            use_container_width=true
+                            use_container_width=True
                         )
 
                     else:
@@ -965,7 +965,7 @@ if menu == "📤 Upload Documents":
 
                             st.dataframe(
                                 table_df,
-                                use_container_width=true
+                                use_container_width=True
                             )
 
                         except Exception:
@@ -2104,7 +2104,7 @@ if menu == "📈 Analytics":
 
         st.dataframe(
             breakdown,
-            use_container_width=true
+            use_container_width=True
         )
 
         st.markdown("---")
