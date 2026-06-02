@@ -8,6 +8,7 @@
 
 import psycopg2
 import json
+import streamlit as st
 
 from datetime import datetime
 
@@ -33,20 +34,31 @@ load_dotenv()
 #     "port": "5432"
 # }
 
+# DB_CONFIG = {
+
+#     "host": os.getenv("DB_HOST"),
+
+#     "database": os.getenv("DB_NAME"),
+
+#     "user": os.getenv("DB_USER"),
+
+#     "password": os.getenv("DB_PASSWORD"),
+
+#     "port": os.getenv("DB_PORT", "5432"),
+
+#     "sslmode": "require"
+# }
+
+
 DB_CONFIG = {
-
-    "host": os.getenv("DB_HOST"),
-
-    "database": os.getenv("DB_NAME"),
-
-    "user": os.getenv("DB_USER"),
-
-    "password": os.getenv("DB_PASSWORD"),
-
-    "port": os.getenv("DB_PORT", "5432"),
-
+    "host": st.secrets["DB_HOST"],
+    "database": st.secrets["DB_NAME"],
+    "user": st.secrets["DB_USER"],
+    "password": st.secrets["DB_PASSWORD"],
+    "port": st.secrets["DB_PORT"],
     "sslmode": "require"
 }
+
 
 # =========================================================
 # GET CONNECTION
