@@ -59,6 +59,13 @@ API_BASE_URL = os.getenv(
     "http://127.0.0.1:8000"
 )
 
+st.set_page_config(
+    page_title="Document AI Studio",
+    page_icon="🧠",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 st.write("AWS_ACCESS_KEY:", "AWS_ACCESS_KEY" in st.secrets)
 st.write("AWS_SECRET_KEY:", "AWS_SECRET_KEY" in st.secrets)
 st.write("AWS_REGION:", "AWS_REGION" in st.secrets)
@@ -68,12 +75,7 @@ st.write("AWS_BUCKET:", "AWS_BUCKET" in st.secrets)
 # PAGE CONFIG
 # =========================================================
 
-st.set_page_config(
-    page_title="Document AI Studio",
-    page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+
 if "chat_history" not in st.session_state:
 
     st.session_state["chat_history"] = []
