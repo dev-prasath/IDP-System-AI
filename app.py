@@ -57,7 +57,7 @@ load_dotenv()
 
 
 try:
-    API_BASE_URL = st.secrets["API_BASE_URL"]
+    API_BASE_URL = st.secrets["API_URL"]
 except Exception:
     API_BASE_URL = os.getenv(
         "API_BASE_URL",
