@@ -22,6 +22,7 @@ import streamlit as st
 import plotly.express as px
 import requests
 
+
 from PIL import Image
 from storage.s3_storage import upload_file_to_s3
 import plotly.graph_objects as go
@@ -54,10 +55,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_BASE_URL = os.getenv(
-    "API_BASE_URL",
-    "http://127.0.0.1:8000"
-)
+
+try:
+    API_BASE_URL = st.secrets["API_BASE_URL"]
+except Exception:
+    API_BASE_URL = os.getenv(
+        "API_BASE_URL",
+        "http://127.0.0.1:8000"
+    )
 
 st.set_page_config(
     page_title="Document AI Studio",
