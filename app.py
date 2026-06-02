@@ -66,11 +66,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.write("AWS_ACCESS_KEY:", "AWS_ACCESS_KEY" in st.secrets)
-st.write("AWS_SECRET_KEY:", "AWS_SECRET_KEY" in st.secrets)
-st.write("AWS_REGION:", "AWS_REGION" in st.secrets)
-st.write("AWS_BUCKET:", "AWS_BUCKET" in st.secrets)
-
 # =========================================================
 # PAGE CONFIG
 # =========================================================
@@ -1886,7 +1881,7 @@ if menu == "📊 Dashboard":
                     "created_at"
                 ]
             ],
-            width="stretch"
+            use_container_width=True
         )
 
 # =========================================================
