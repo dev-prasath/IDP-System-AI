@@ -65,6 +65,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+st.error(f"API URL = {API_BASE_URL}")
 
 # =========================================================
 # PAGE CONFIG
