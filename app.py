@@ -891,7 +891,7 @@ if menu == "📤 Upload Documents":
 
                     st.image(
                         Image.fromarray(visual),
-                        use_container_width=True
+                        width=800
                     )
 
                 # =====================================================
@@ -942,7 +942,7 @@ if menu == "📤 Upload Documents":
 
                         st.dataframe(
                             entity_df,
-                            use_container_width=True
+                            width=800
                         )
 
                     else:
@@ -965,7 +965,7 @@ if menu == "📤 Upload Documents":
 
                             st.dataframe(
                                 table_df,
-                                use_container_width=True
+                                width=800
                             )
 
                         except Exception:
@@ -1846,7 +1846,7 @@ if menu == "📊 Dashboard":
 
             st.plotly_chart(
                 fig,
-                use_container_width=True
+                width=800
             )
 
         with right:
@@ -1870,7 +1870,7 @@ if menu == "📊 Dashboard":
 
             st.plotly_chart(
                 bar_fig,
-                use_container_width=True
+                width=800
             )
 
         st.markdown("---")
@@ -1887,7 +1887,7 @@ if menu == "📊 Dashboard":
                     "created_at"
                 ]
             ],
-            use_container_width=True
+            width=800
         )
 
 # =========================================================
@@ -2002,7 +2002,7 @@ if menu == "📈 Analytics":
 
             st.plotly_chart(
                 pie,
-                use_container_width=True
+                width=800
             )
 
         with chart2:
@@ -2036,7 +2036,7 @@ if menu == "📈 Analytics":
 
             st.plotly_chart(
                 bar,
-                use_container_width=True
+                width=800
             )
 
         st.markdown("---")
@@ -2076,7 +2076,7 @@ if menu == "📈 Analytics":
 
             st.plotly_chart(
                 line,
-                use_container_width=True
+                width=800
             )
 
         except Exception:
@@ -2104,7 +2104,7 @@ if menu == "📈 Analytics":
 
         st.dataframe(
             breakdown,
-            use_container_width=True
+            width=800
         )
 
         st.markdown("---")
